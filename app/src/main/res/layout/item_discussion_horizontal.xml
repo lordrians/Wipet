@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+<LinearLayout android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="@dimen/width_item_discuss_horizontal"
         android:layout_height="@dimen/height_item_discuss_horizontal"
         android:background="@drawable/selector_item_discus_horizontal"
+        android:layout_margin="7dp"
         android:elevation="@dimen/elevation_item_horzdisc">
 
         <ImageView
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_img_item_discussion_horizontal"
             android:scaleType="centerCrop"
-            tools:src="@sample/img"
+            android:src="@drawable/img_cats"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -30,10 +30,10 @@
             android:layout_marginStart="@dimen/horizontal_item_discuss_start"
             android:layout_marginEnd="@dimen/horizontal_item_discuss_end"
             android:maxLines="2"
+            android:text="@string/title_discus_horizontal_item"
             android:textColor="@color/black"
             android:textSize="@dimen/title_discuss_horizontal_item"
             android:textStyle="bold"
-            tools:text="@sample/title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_item_dishor" />
@@ -58,19 +58,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:text="@string/username"
                     android:textColor="@color/black"
-                    tools:text="@sample/nickname"
                     android:textSize="@dimen/txt_item_hordiscus" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-
-                    tools:text="@sample/date"
+                    android:text="@string/a_day_ago"
                     android:textColor="@color/hint_color"
-                    android:textSize="@dimen/txt_item_hordiscus" />
+                    android:textSize="@dimen/txt_item_hordiscus"/>
 
 
             </LinearLayout>
@@ -93,8 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
-
-                    tools:text="@sample/like"
+                    android:text="@string/count_like"
                     android:textColor="@color/subtext_horzdiscus_item"
                     android:textSize="@dimen/txt_item_hordiscus" />
 
@@ -109,10 +106,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
-
-                    tools:text="@sample/like"
+                    android:text="@string/count_like"
                     android:textColor="@color/subtext_horzdiscus_item"
-                    android:textSize="@dimen/txt_item_hordiscus" />
+                    android:textSize="@dimen/txt_item_hordiscus"/>
 
 
             </LinearLayout>
@@ -121,7 +117,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
 
-    
+
 </LinearLayout>

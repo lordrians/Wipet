@@ -32,5 +32,14 @@
     <dimen name="txt_item_hordiscus">12sp</dimen>
     <dimen name="top_margin_txt_horzdiscus">24dp</dimen>
     <dimen name="radius_item_horzdiscus">20dp</dimen>
-    <dimen name="elevation_item_horzdisc">8dp</dimen>
+    <dimen name="elevation_item_horzdisc">6dp</dimen>
+    <dimen name="title_discuss_vertical_item">18sp</dimen>
+    <dimen name="username_discuss_vertical_item">14sp</dimen>
+    <dimen name="date_discuss_vertical_item">14sp</dimen>
+    <dimen name="like_discuss_vertical_item">14sp</dimen>
+    <dimen name="comment_discuss_vertical_item">15sp</dimen>
+    <dimen name="top_divider_discussion_list_vertical">16dp</dimen>
+    <dimen name="container_discussion_vertical_end">32</dimen>
+    <dimen name="container_discussion_vertical_start">32dp</dimen>
+    <dimen name="bot_divider_discussion_list_vertical">16dp</dimen>
 </resources>

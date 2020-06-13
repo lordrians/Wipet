@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.HomeFragment">
+    tools:context=".fragment.MoreAdoptionFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,9 +36,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_marginStart="@dimen/container_start"
-            android:layout_marginEnd="@dimen/container_end"
-            android:orientation="vertical">
+            android:layout_marginEnd="@dimen/container_end">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,12 +51,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_title_item_hordiscus"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_pets_frame"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:gravity="center"
@@ -130,12 +131,12 @@
 
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/height_pets_frame"
                     android:layout_marginTop="@dimen/top_margin_pets_frame"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:gravity="center"
@@ -195,12 +196,11 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_more"
                             android:layout_gravity="center"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/more"
+                            android:text="@string/coming_soon"
                             android:fontFamily="@font/poppin"
                             android:textColor="@color/black"
                             android:gravity="center"/>
@@ -208,58 +208,159 @@
 
 
                 </LinearLayout>
-                
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="@dimen/top_margin_title_feature"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/discussion"
-                    android:textSize="@dimen/title_feature"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppin"/>
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/view_all"
-                    android:textSize="@dimen/hint_input"
-                    android:textColor="@color/hint_color"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppin"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="end"/>
+                    android:layout_height="@dimen/height_pets_frame"
+                    android:layout_marginTop="@dimen/top_margin_pets_frame"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            android:fontFamily="@font/poppin"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            android:fontFamily="@font/poppin"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            android:fontFamily="@font/poppin"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_pets_frame"
+                    android:layout_marginTop="@dimen/top_margin_pets_frame"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            android:fontFamily="@font/poppin"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            android:fontFamily="@font/poppin"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            android:fontFamily="@font/poppin"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
             </LinearLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:itemCount="5"
-                tools:listitem="@layout/item_discussion_horizontal"/>
-
-
 
         </LinearLayout>
 
+
+
     </LinearLayout>
-
-
-
-
-
-
-
-
 
 </ScrollView>
