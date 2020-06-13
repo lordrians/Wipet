@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="signup_title">40sp</dimen>
+    <dimen name="top_signup_title">75sp</dimen>
+    <dimen name="container_start">16dp</dimen>
+    <dimen name="container_end">16dp</dimen>
+    <dimen name="top_margin_signin_et">40dp</dimen>
+    <dimen name="hint_input">16sp</dimen>
+    <dimen name="stroke_hint">1dp</dimen>
+    <dimen name="radius_hint">8dp</dimen>
+    <dimen name="top_margin_hint">12dp</dimen>
+    <dimen name="button">16sp</dimen>
+    <dimen name="btn_top_marginhint">40dp</dimen>
+    <dimen name="divider">2dp</dimen>
+    <dimen name="btn_pad_loganotheraccount">10dp</dimen>
+    <dimen name="title_feature">34sp</dimen>
+    <dimen name="height_pets_frame">100dp</dimen>
+    <dimen name="pad_frame_pets">16dp</dimen>
+    <dimen name="stroke_pets_frame">2dp</dimen>
+    <dimen name="radius_pets_frame">16dp</dimen>
+    <dimen name="margin_start_pets_frame">10dp</dimen>
+    <dimen name="margin_end_pets_frame">10dp</dimen>
+    <dimen name="top_margin_pets_frame">16dp</dimen>
+    <dimen name="top_margin_title_feature">32dp</dimen>
+    <dimen name="width_item_discuss_horizontal">190dp</dimen>
+    <dimen name="height_item_discuss_horizontal">200dp</dimen>
+    <dimen name="height_img_item_discussion_horizontal">100dp</dimen>
+    <dimen name="title_discuss_horizontal_item">16sp</dimen>
+    <dimen name="horizontal_item_discuss_start">12dp</dimen>
+    <dimen name="horizontal_item_discuss_end">12dp</dimen>
+    <dimen name="top_title_item_hordiscus">8dp</dimen>
+    <dimen name="txt_item_hordiscus">12sp</dimen>
+    <dimen name="top_margin_txt_horzdiscus">24dp</dimen>
+    <dimen name="radius_item_horzdiscus">20dp</dimen>
+    <dimen name="elevation_item_horzdisc">8dp</dimen>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Wipet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="conf_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="OR">OR</string>
+    <string name="google">Google</string>
+    <string name="divider">"  "</string>
+    <string name="facebook">Facebook</string>
+    <string name="dont_have_an_account">Don\'t have and account ?</string>
+    <string name="home">Home</string>
+    <string name="discussion">Discussion</string>
+    <string name="adopt">Adoption</string>
+    <string name="notification">Notification</string>
+    <string name="account">Account</string>
+    <string name="adoption">Adoption</string>
+    <string name="cats">Cats</string>
+    <string name="view_all">View All</string>
+    <string name="title_discus_horizontal_item">Why cats always sneeze?</string>
+    <string name="ferrianrp">ferrianrp</string>
+    <string name="a_day_ago">1 day ago</string>
+    <string name="count_like">120</string>
+</resources>

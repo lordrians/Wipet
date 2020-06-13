@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/stroke_pets_frame"
+                android:color="@color/colorPrimary"/>
+            <corners
+                android:radius="@dimen/radius_pets_frame"/>
+            <padding
+                android:bottom="@dimen/pad_frame_pets"
+                android:left="@dimen/pad_frame_pets"
+                android:right="@dimen/pad_frame_pets"
+                android:top="@dimen/pad_frame_pets"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/stroke_pets_frame"
+                android:color="@color/colorPrimary"/>
+            <corners
+                android:radius="@dimen/radius_pets_frame"/>
+            <padding
+                android:bottom="@dimen/pad_frame_pets"
+                android:left="@dimen/pad_frame_pets"
+                android:right="@dimen/pad_frame_pets"
+                android:top="@dimen/pad_frame_pets"/>
+        </shape>
+    </item>
+</selector>
