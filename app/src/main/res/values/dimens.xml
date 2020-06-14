@@ -42,4 +42,16 @@
     <dimen name="container_discussion_vertical_end">32</dimen>
     <dimen name="container_discussion_vertical_start">32dp</dimen>
     <dimen name="bot_divider_discussion_list_vertical">16dp</dimen>
+    <dimen name="reply_comment">14sp</dimen>
+    <dimen name="pad_left_hint_frame">24dp</dimen>
+    <dimen name="pad_right_hint_frame">24dp</dimen>
+    <dimen name="pad_top_hint_frame">16dp</dimen>
+    <dimen name="pad_bot_hint_frame">16dp</dimen>
+    <dimen name="margin_start_send_reply">6dp</dimen>
+    <dimen name="height_toolbar">56dp</dimen>
+    <dimen name="height_container_user_detaildiscus">56dp</dimen>
+    <dimen name="item_userowndiscus_detaildiscus">16sp</dimen>
+    <dimen name="title_detail_discus">24sp</dimen>
+    <dimen name="height_img_detaildiscus">185dp</dimen>
+    <dimen name="txt_detail_discus">16sp</dimen>
 </resources>

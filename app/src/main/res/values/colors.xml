@@ -9,4 +9,5 @@
     <color name="transparent">#00FFFFFF</color>
     <color name="account_another_plat">#80505050</color>
     <color name="subtext_horzdiscus_item">#80000000</color>
+    <color name="grey">#80000000</color>
 </resources>

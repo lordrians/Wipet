@@ -41,6 +41,28 @@
         <item name="android:layout_marginEnd">@dimen/container_end</item>
     </style>
 
+    <!-- Hint Text. -->
+
+    <style name="BaseTextGrey" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:fontFamily">@font/poppin</item>
+    </style>
+
+    <style name="BaseTextGreytBold" parent="BaseTextBlack">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="BaseTextGreyContainer" parent="BaseTextBlack">
+        <item name="android:layout_marginStart">@dimen/container_start</item>
+        <item name="android:layout_marginEnd">@dimen/container_end</item>
+    </style>
+
+    <style name="BaseTextGreyBoldContainer" parent="BaseTextBlackBold">
+        <item name="android:layout_marginStart">@dimen/container_start</item>
+        <item name="android:layout_marginEnd">@dimen/container_end</item>
+    </style>
+
     <!-- Button Text. -->
 
     <style name="ButtonBase" parent="@android:style/TextAppearance">

@@ -33,4 +33,10 @@
     <string name="bird">Bird</string>
     <string name="sugar_glider">Sugar Glider</string>
     <string name="snake">Snake</string>
+    <string name="reply">Reply...</string>
+    <string name="jakarta">Jakarta</string>
+    <string name="comma">,</string>
+    <string name="date">23 March 2020</string>
+    <string name="divider_line">|</string>
+    <string name="time">12.30</string>
 </resources>

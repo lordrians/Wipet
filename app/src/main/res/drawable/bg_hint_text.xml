@@ -4,6 +4,11 @@
     <solid android:color="@color/transparent" />
     <stroke android:color="@color/hint_color"
         android:width="@dimen/stroke_hint"/>
+    <padding
+        android:left="@dimen/pad_left_hint_frame"
+        android:right="@dimen/pad_right_hint_frame"
+        android:top="@dimen/pad_top_hint_frame"
+        android:bottom="@dimen/pad_bot_hint_frame"/>
 
     <corners android:radius="@dimen/radius_hint"/>
 

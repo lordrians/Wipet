@@ -31,7 +31,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_signin_et"
             android:layout_marginStart="@dimen/container_start"
-            android:background="@drawable/bg_hint_text"
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -39,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/username"
                 android:inputType="text"
+                android:background="@drawable/bg_hint_text"
                 style="@style/TextAppearance.TextInputLayout">
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -49,13 +49,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
-            android:background="@drawable/bg_hint_text"
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
+                android:background="@drawable/bg_hint_text"
                 android:inputType="textEmailAddress"
                 style="@style/TextAppearance.TextInputLayout">
             </com.google.android.material.textfield.TextInputEditText>
@@ -67,7 +67,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
-            android:background="@drawable/bg_hint_text"
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -75,6 +74,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:inputType="textPassword"
+                android:background="@drawable/bg_hint_text"
                 style="@style/TextAppearance.TextInputLayout">
             </com.google.android.material.textfield.TextInputEditText>
 
@@ -85,7 +85,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
-            android:background="@drawable/bg_hint_text"
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -93,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/conf_password"
                 android:inputType="textPassword"
+                android:background="@drawable/bg_hint_text"
                 style="@style/TextAppearance.TextInputLayout">
             </com.google.android.material.textfield.TextInputEditText>
 

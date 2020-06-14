@@ -24,13 +24,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_signup_title"
             android:layout_marginStart="@dimen/container_start"
-            android:background="@drawable/bg_hint_text"
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username"
+                android:background="@drawable/bg_hint_text"
                 android:inputType="text"
                 style="@style/TextAppearance.TextInputLayout">
             </com.google.android.material.textfield.TextInputEditText>
@@ -42,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
-            android:background="@drawable/bg_hint_text"
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -50,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:inputType="textPassword"
+                android:background="@drawable/bg_hint_text"
                 style="@style/TextAppearance.TextInputLayout">
             </com.google.android.material.textfield.TextInputEditText>
 
