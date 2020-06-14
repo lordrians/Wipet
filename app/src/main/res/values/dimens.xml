@@ -54,4 +54,7 @@
     <dimen name="title_detail_discus">24sp</dimen>
     <dimen name="height_img_detaildiscus">185dp</dimen>
     <dimen name="txt_detail_discus">16sp</dimen>
+    <dimen name="height_img_comment">40dp</dimen>
+    <dimen name="item_discuss_comment">14sp</dimen>
+    <dimen name="margin_top_comment">14dp</dimen>
 </resources>

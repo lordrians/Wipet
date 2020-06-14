@@ -118,6 +118,8 @@
 
         </androidx.appcompat.widget.Toolbar>
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -235,9 +237,15 @@
                 style="@style/BaseTextBlack"/>
 
             <View
+                android:layout_marginTop="@dimen/margin_top_comment"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/hint_color"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_comment"/>
 
 
         </LinearLayout>
