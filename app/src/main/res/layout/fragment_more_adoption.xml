@@ -44,9 +44,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/adoption"
                 android:textSize="@dimen/title_feature"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:fontFamily="@font/poppin"/>
+                style="@style/BaseTextBlackBold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -78,8 +76,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/cats"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
 
@@ -100,9 +97,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/cats"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            android:text="@string/dog"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
 
@@ -123,9 +119,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/cats"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            android:text="@string/bird"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
 
@@ -155,9 +150,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/cats"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            android:text="@string/sugar_glider"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
 
@@ -178,9 +172,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/cats"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            android:text="@string/snake"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
 
@@ -201,81 +194,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/coming_soon"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
-                            android:gravity="center"/>
-                    </LinearLayout>
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/height_pets_frame"
-                    android:layout_marginTop="@dimen/top_margin_pets_frame"
-                    android:orientation="horizontal"
-                    android:baselineAligned="false">
-
-                    <LinearLayout
-                        android:gravity="center"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_marginStart="@dimen/margin_start_pets_frame"
-                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
-                        android:background="@drawable/selector_bg_pets_frame"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/coming_soon"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_marginStart="@dimen/margin_start_pets_frame"
-                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
-                        android:background="@drawable/selector_bg_pets_frame"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/coming_soon"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_marginStart="@dimen/margin_start_pets_frame"
-                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
-                        android:background="@drawable/selector_bg_pets_frame"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/coming_soon"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
 
@@ -305,8 +224,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/coming_soon"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
                     <LinearLayout
@@ -326,8 +244,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/coming_soon"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
                     <LinearLayout
@@ -347,8 +264,77 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/coming_soon"
-                            android:fontFamily="@font/poppin"
-                            android:textColor="@color/black"
+                            style="@style/BaseTextBlack"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_pets_frame"
+                    android:layout_marginTop="@dimen/top_margin_pets_frame"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            style="@style/BaseTextBlack"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            style="@style/BaseTextBlack"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_start_pets_frame"
+                        android:layout_marginEnd="@dimen/margin_end_pets_frame"
+                        android:background="@drawable/selector_bg_pets_frame"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coming_soon"
+                            style="@style/BaseTextBlack"
                             android:gravity="center"/>
                     </LinearLayout>
 

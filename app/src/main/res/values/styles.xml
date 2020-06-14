@@ -15,10 +15,33 @@
         <item name="android:paddingStart">@dimen/container_start</item>
         <item name="android:paddingEnd">@dimen/container_end</item>
         <item name="android:fontFamily">@font/poppin</item>
-
-
-
     </style>
+
+
+
+    <!-- Black Text. -->
+
+    <style name="BaseTextBlack" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppin</item>
+    </style>
+
+    <style name="BaseTextBlackBold" parent="BaseTextBlack">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="BaseTextBlackContainer" parent="BaseTextBlack">
+        <item name="android:layout_marginStart">@dimen/container_start</item>
+        <item name="android:layout_marginEnd">@dimen/container_end</item>
+    </style>
+
+    <style name="BaseTextBlackBoldContainer" parent="BaseTextBlackBold">
+        <item name="android:layout_marginStart">@dimen/container_start</item>
+        <item name="android:layout_marginEnd">@dimen/container_end</item>
+    </style>
+
+    <!-- Button Text. -->
 
     <style name="ButtonBase" parent="@android:style/TextAppearance">
         <item name="android:textSize">@dimen/button</item>
