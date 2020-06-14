@@ -24,7 +24,7 @@
                 style="@style/BaseTextBlack"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/selector_reply_comment"
+                android:background="@drawable/bg_reply_comment"
                 android:hint="@string/reply"
                 android:textColorHint="@color/hint_color"
                 android:textSize="@dimen/reply_comment"
