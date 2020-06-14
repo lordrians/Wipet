@@ -57,4 +57,6 @@
     <dimen name="height_img_comment">40dp</dimen>
     <dimen name="item_discuss_comment">14sp</dimen>
     <dimen name="margin_top_comment">14dp</dimen>
+    <dimen name="txt_title_toolbar">18sp</dimen>
+    <dimen name="txt_publish_toolbar">16sp</dimen>
 </resources>
