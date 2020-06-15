@@ -6,53 +6,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activity.CreateDiscussionActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtinputlay"
-                style="@style/BaseTextBlack"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_reply_comment"
-                android:hint="@string/reply"
-                android:inputType="textCapSentences|textMultiLine"
-                android:maxLines="5"
-                android:textColorHint="@color/hint_color"
-                android:textSize="@dimen/reply_comment"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/margin_start_send_reply"
-                android:background="@drawable/selector_list_item"
-                android:src="@drawable/ic_send_reply"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/txtinputlay"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -125,24 +78,67 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:layout_marginStart="@dimen/container_start"
+                android:layout_marginEnd="@dimen/container_end"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_img_detaildiscus"
+                    android:background="@color/hint_color"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin_hint"
+                    android:text="@string/add_images"
+                    style="@style/ButtonBase"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/top_signup_title"
-                    android:layout_marginStart="@dimen/container_start"
-                    android:layout_marginEnd="@dimen/container_end">
+                    android:layout_marginTop="@dimen/top_margin_hint">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/username"
+                        android:hint="@string/title"
                         android:background="@drawable/bg_hint_text"
-                        android:inputType="text"
+                        android:inputType="textMultiLine"
+                        android:maxLines="2"
+                        style="@style/TextAppearance.TextInputLayout">
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin_hint"
+                    android:background="@drawable/bg_hint_text"
+                    android:entries="@array/pets_category"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin_hint"
+                    android:background="@drawable/bg_hint_text"
+                    android:entries="@array/category_discussion"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/your_content"
+                        android:background="@drawable/bg_hint_text"
+                        android:inputType="textMultiLine"
+                        android:maxLines="2"
                         style="@style/TextAppearance.TextInputLayout">
                     </com.google.android.material.textfield.TextInputEditText>
 

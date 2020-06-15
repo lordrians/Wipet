@@ -42,4 +42,17 @@
     <string name="comment">"banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya banget diskusinya "</string>
     <string name="create_discussion">Create Discussion</string>
     <string name="publish">Publish</string>
+    <string name="title">Title...</string>
+    <string name="your_content">Your content...</string>
+    <string name="add_images">Add Images</string>
+
+    <string-array name="pets_category">
+        <item>Dog</item>
+        <item>Cat</item>
+    </string-array>
+
+    <string-array name="category_discussion">
+        <item>Health</item>
+        <item>Food</item>
+    </string-array>
 </resources>
