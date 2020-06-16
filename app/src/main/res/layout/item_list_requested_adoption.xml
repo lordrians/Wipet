@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/img_user"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingStart="8dp"
+            android:paddingEnd="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                style="@style/BaseTextGrey"
+                android:text="@string/date"
+                android:textSize="@dimen/date_item_reqadopt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                style="@style/BaseTextBlackBold"
+                android:text="@string/ferrianrp"
+                android:textSize="@dimen/name_item_reqadopt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    style="@style/BaseTextBlack"
+                    android:text="@string/depok"
+                    android:textSize="@dimen/location_item_list_reqadopt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    style="@style/BaseTextBlack"
+                    android:text="@string/comma"
+                    android:textSize="@dimen/location_item_list_reqadopt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_marginStart="6dp"
+                    style="@style/BaseTextBlack"
+                    android:text="@string/jawa_barat"
+                    android:textSize="@dimen/location_item_list_reqadopt"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/show_cv"
+            style="@style/ButtonBaseDark"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginBottom="@dimen/bot_divider_discussion_list_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:background="@color/hint_color"/>
+
+</LinearLayout>

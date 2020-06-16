@@ -67,4 +67,11 @@
     <dimen name="container_bot">16dp</dimen>
     <dimen name="width_animal_sex">60dp</dimen>
     <dimen name="height_animal_sex">60dp</dimen>
+    <dimen name="height_item_reqadopt">145dp</dimen>
+    <dimen name="name_item_reqadopt">18sp</dimen>
+    <dimen name="date_item_reqadopt">14sp</dimen>
+    <dimen name="count_request">45sp</dimen>
+    <dimen name="request">14</dimen>
+    <dimen name="height_item_list_reqadopt">70dp</dimen>
+    <dimen name="location_item_list_reqadopt">12sp</dimen>
 </resources>

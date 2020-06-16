@@ -68,6 +68,11 @@
     <string name="friendly_with_kids">Friendly with kids</string>
     <string name="neutered">Neutered</string>
     <string name="upload">Upload</string>
+    <string name="count_request">21</string>
+    <string name="request">Request</string>
+    <string name="show_cv">Show CV</string>
+    <string name="jawa_barat">Jawa Barat</string>
+    <string name="depok">Depok</string>
 
     <string-array name="pets_category">
         <item>Dog</item>
