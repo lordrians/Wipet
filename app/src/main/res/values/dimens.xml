@@ -65,4 +65,6 @@
     <dimen name="pad_search">6dp</dimen>
     <dimen name="container_top">16dp</dimen>
     <dimen name="container_bot">16dp</dimen>
+    <dimen name="width_animal_sex">60dp</dimen>
+    <dimen name="height_animal_sex">60dp</dimen>
 </resources>

@@ -111,6 +111,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 android:layout_marginStart="@dimen/container_start"
                 android:layout_marginEnd="@dimen/container_end"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -121,6 +123,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="5"
                     android:layout_height="match_parent"
+                    app:hintEnabled="false"
                     android:layout_marginEnd="6dp">
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
@@ -136,7 +139,6 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:paddingTop="10dp"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="wrap_content"

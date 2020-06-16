@@ -50,6 +50,24 @@
     <string name="anggora">Anggora</string>
     <string name="harga">Rp. 5.000.000</string>
     <string name="find_pets_you_want">Find a pet you want</string>
+    <string name="category">Category</string>
+    <string name="pets_category">Pets Category</string>
+    <string name="type">Type</string>
+    <string name="name">Name</string>
+    <string name="animal_age">Animal Age</string>
+    <string name="month">Month</string>
+    <string name="age">13</string>
+    <string name="choose_size">Choose Size</string>
+    <string name="medium">Medium</string>
+    <string name="animal_sex">Animal_Sex</string>
+    <string name="background_story">Background Story</string>
+    <string name="description">Description</string>
+    <string name="medical_notes">Medical Notes</string>
+    <string name="more_detail">More Details :</string>
+    <string name="vaccinate">Vaccinated</string>
+    <string name="friendly_with_kids">Friendly with kids</string>
+    <string name="neutered">Neutered</string>
+    <string name="upload">Upload</string>
 
     <string-array name="pets_category">
         <item>Dog</item>
@@ -59,5 +77,20 @@
     <string-array name="category_discussion">
         <item>Health</item>
         <item>Food</item>
+    </string-array>
+
+    <string-array name="size_pet">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="background_story_pet">
+        <item>Stray</item>
+        <item>Abandoned</item>
+        <item>Abused</item>
+        <item>Financial</item>
+        <item>Owner Give Up</item>
+        <item>Others</item>
     </string-array>
 </resources>
