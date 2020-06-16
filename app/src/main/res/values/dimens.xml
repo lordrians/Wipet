@@ -74,4 +74,11 @@
     <dimen name="request">14</dimen>
     <dimen name="height_item_list_reqadopt">70dp</dimen>
     <dimen name="location_item_list_reqadopt">12sp</dimen>
+    <dimen name="title_cv_adopt">30sp</dimen>
+    <dimen name="width_img_cvadopt">90dp</dimen>
+    <dimen name="height_img_cvadopt">90dp</dimen>
+    <dimen name="txt_cv_adopt">16sp</dimen>
+    <dimen name="txt_cv_adopt_small">14sp</dimen>
+    <dimen name="top_margin_cvadopt_small">2dp</dimen>
+    <dimen name="height_logo_cvadopt">75dp</dimen>
 </resources>

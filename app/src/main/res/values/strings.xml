@@ -73,6 +73,26 @@
     <string name="show_cv">Show CV</string>
     <string name="jawa_barat">Jawa Barat</string>
     <string name="depok">Depok</string>
+    <string name="cv_adopt">CV Adoption</string>
+    <string name="ferrian_r_p">Ferrian Redhia Pratama</string>
+    <string name="i_am_a">"I am a "</string>
+    <string name="student">Student</string>
+    <string name="alasan_adopsi">Alasan mengadopsi hewan</string>
+    <string name="location">Location</string>
+    <string name="alamat_lengkap">Alamat Lengkap</string>
+    <string name="griyapancoran">Perumahan Griya Pancoran Mas Indah Blok D1 Nomor 8</string>
+    <string name="tipe_rumah">Tipe Rumah</string>
+    <string name="luas_bangunan">Luas Bangunan</string>
+    <string name="luas_bangunan_">100 m2</string>
+    <string name="hewan_lain">Hewan lain yang tinggal</string>
+    <string name="jwb_hewan_lain">ada 2 kucing cowo cewe</string>
+    <string name="tmpt_tinggal_yg_diadopsi">Tempat tinggal hewan yang diadopsi</string>
+    <string name="jwb_tmpt_tinggal_yg_diadopsi">bersama saya, ada kandang kucing juga</string>
+    <string name="contact">Contact</string>
+    <string name="jwb_alasan">Karena ingin menambah hewan peliharaan</string>
+    <string name="email_ferrian">ferrianrp@gmail.com</string>
+    <string name="no_wa">No WA</string>
+    <string name="tlp_ferrian">081385558854</string>
 
     <string-array name="pets_category">
         <item>Dog</item>

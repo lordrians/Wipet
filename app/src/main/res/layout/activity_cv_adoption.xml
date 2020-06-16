@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CvAdoptionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/container_start"
+                    android:layout_marginEnd="@dimen/container_end"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_list_item"
+                        android:src="@drawable/ic_back_arrow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/container_start"
+                android:layout_marginTop="@dimen/container_top"
+                android:layout_marginEnd="@dimen/container_end"
+                android:layout_marginBottom="@dimen/container_bot"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/cv_adopt"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/title_cv_adopt"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView"
+                        android:layout_width="@dimen/width_img_cvadopt"
+                        android:layout_height="@dimen/height_img_cvadopt"
+                        android:src="@drawable/img_user"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="@dimen/container_start"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            style="@style/BaseTextBlackBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="@string/ferrian_r_p"
+                            android:textSize="@dimen/name_item_reqadopt" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/BaseTextBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/depok"
+                                android:textSize="@dimen/location_item_list_reqadopt" />
+
+                            <TextView
+                                style="@style/BaseTextBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="@string/comma"
+                                android:textSize="@dimen/location_item_list_reqadopt" />
+
+                            <TextView
+                                style="@style/BaseTextBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:maxLines="1"
+                                android:text="@string/jawa_barat"
+                                android:textSize="@dimen/location_item_list_reqadopt" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppin"
+                        android:text="@string/i_am_a"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/txt_cv_adopt" />
+
+                    <TextView
+                        style="@style/BaseTextBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/student"
+                        android:textSize="@dimen/txt_cv_adopt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:background="@drawable/bg_left_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BaseTextGrey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alasan_adopsi"
+                        android:textSize="@dimen/txt_cv_adopt_small" />
+
+                    <TextView
+                        style="@style/BaseTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                        android:text="@string/jwb_alasan"
+                        android:textSize="@dimen/txt_cv_adopt" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:fontFamily="@font/poppin"
+                    android:text="@string/location"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/txt_cv_adopt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:background="@drawable/bg_left_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BaseTextGrey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alamat_lengkap"
+                        android:textSize="@dimen/txt_cv_adopt_small" />
+
+                    <TextView
+                        style="@style/BaseTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                        android:text="@string/griyapancoran"
+                        android:textSize="@dimen/txt_cv_adopt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/container_top"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_left_line"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/BaseTextGrey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipe_rumah"
+                            android:textSize="@dimen/txt_cv_adopt_small" />
+
+                        <TextView
+                            style="@style/BaseTextBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                            android:text="@string/home"
+                            android:textSize="@dimen/txt_cv_adopt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/container_top"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_left_line"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/BaseTextGrey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/luas_bangunan"
+                            android:textSize="@dimen/txt_cv_adopt_small" />
+
+                        <TextView
+                            style="@style/BaseTextBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                            android:text="@string/luas_bangunan_"
+                            android:textSize="@dimen/txt_cv_adopt" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:background="@drawable/bg_left_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BaseTextGrey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hewan_lain"
+                        android:textSize="@dimen/txt_cv_adopt_small" />
+
+                    <TextView
+                        style="@style/BaseTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                        android:text="@string/jwb_hewan_lain"
+                        android:textSize="@dimen/txt_cv_adopt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:background="@drawable/bg_left_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BaseTextGrey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tmpt_tinggal_yg_diadopsi"
+                        android:textSize="@dimen/txt_cv_adopt_small" />
+
+                    <TextView
+                        style="@style/BaseTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                        android:text="@string/jwb_tmpt_tinggal_yg_diadopsi"
+                        android:textSize="@dimen/txt_cv_adopt" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:fontFamily="@font/poppin"
+                    android:text="@string/contact"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/txt_cv_adopt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/container_top"
+                            android:background="@drawable/bg_left_line"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/BaseTextGrey"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/email"
+                                android:textSize="@dimen/txt_cv_adopt_small" />
+
+                            <TextView
+                                style="@style/BaseTextBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                                android:text="@string/email_ferrian"
+                                android:textSize="@dimen/txt_cv_adopt" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/container_top"
+                            android:background="@drawable/bg_left_line"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/BaseTextGrey"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no_wa"
+                                android:textSize="@dimen/txt_cv_adopt_small" />
+
+                            <TextView
+                                style="@style/BaseTextBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                                android:text="@string/tlp_ferrian"
+                                android:textSize="@dimen/txt_cv_adopt" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_logo_cvadopt"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/logo_wipet" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
