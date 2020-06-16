@@ -5,6 +5,8 @@
         <shape android:shape="rectangle">
             <solid android:color="@color/white"/>
             <corners
+                android:topRightRadius="0dp"
+                android:topLeftRadius="0dp"
                 android:bottomLeftRadius="@dimen/radius_item_horzdiscus"
                 android:bottomRightRadius="@dimen/radius_item_horzdiscus"/>
         </shape>
@@ -14,6 +16,8 @@
         <shape android:shape="rectangle">
             <solid android:color="@color/white"/>
             <corners
+                android:topRightRadius="0dp"
+                android:topLeftRadius="0dp"
                 android:bottomLeftRadius="@dimen/radius_item_horzdiscus"
                 android:bottomRightRadius="@dimen/radius_item_horzdiscus"/>
         </shape>

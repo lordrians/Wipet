@@ -45,6 +45,11 @@
     <string name="title">Title...</string>
     <string name="your_content">Your content...</string>
     <string name="add_images">Add Images</string>
+    <string name="create_adopt">Create Adoption</string>
+    <string name="name_cat">Shiro</string>
+    <string name="anggora">Anggora</string>
+    <string name="harga">Rp. 5.000.000</string>
+    <string name="find_pets_you_want">Find a pet you want</string>
 
     <string-array name="pets_category">
         <item>Dog</item>

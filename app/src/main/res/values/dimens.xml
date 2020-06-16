@@ -57,6 +57,12 @@
     <dimen name="height_img_comment">40dp</dimen>
     <dimen name="item_discuss_comment">14sp</dimen>
     <dimen name="margin_top_comment">14dp</dimen>
-    <dimen name="txt_title_toolbar">18sp</dimen>
+    <dimen name="txt_title_toolbar">20sp</dimen>
     <dimen name="txt_publish_toolbar">16sp</dimen>
+    <dimen name="radius_btn_round_top">20dp</dimen>
+    <dimen name="ras_pets">12sp</dimen>
+    <dimen name="height_img_adopt_list">120dp</dimen>
+    <dimen name="pad_search">6dp</dimen>
+    <dimen name="container_top">16dp</dimen>
+    <dimen name="container_bot">16dp</dimen>
 </resources>
