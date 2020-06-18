@@ -99,4 +99,10 @@
     <dimen name="name_detailadopt">28sp</dimen>
     <dimen name="from_detailadopt">14sp</dimen>
     <dimen name="location_detailadopt">16sp</dimen>
+    <dimen name="title_age_detailadopt">14sp</dimen>
+    <dimen name="age_content_detailadopt">18sp</dimen>
+    <dimen name="title_reason_detailadopt">14sp</dimen>
+    <dimen name="width_btn_detailadopt">45dp</dimen>
+    <dimen name="height_btn_detailadopt">45dp</dimen>
+    <dimen name="content_detailadopt">14sp</dimen>
 </resources>

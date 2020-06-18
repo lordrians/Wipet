@@ -186,6 +186,237 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/container_top"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/age_title"
+                                android:textSize="@dimen/title_age_detailadopt"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/age_content_detailadopt"
+                                android:textSize="@dimen/age_content_detailadopt"
+                                android:layout_marginTop="@dimen/top_margin_hint"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/age_category"
+                                android:textSize="@dimen/title_age_detailadopt"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pets_category_detailadopt"
+                                android:textSize="@dimen/age_content_detailadopt"
+                                android:layout_marginTop="@dimen/top_margin_hint"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/reason"
+                                android:textSize="@dimen/title_reason_detailadopt"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/abandoned"
+                                android:textSize="@dimen/age_content_detailadopt"
+                                android:layout_marginTop="@dimen/top_margin_hint"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="@dimen/container_top"
+                        android:layout_marginBottom="@dimen/container_bot"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider"
+                        android:background="@color/colorAccent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="@dimen/width_btn_detailadopt"
+                                android:layout_height="@dimen/height_btn_detailadopt"
+                                android:layout_gravity="center"
+                                android:background="@drawable/selector_btn_detailadopt"
+                                android:src="@drawable/ic_vaccinated"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/vaccinate"
+                                android:textSize="@dimen/content_detailadopt"
+                                android:layout_marginTop="@dimen/top_margin_hint"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="@dimen/width_btn_detailadopt"
+                                android:layout_height="@dimen/height_btn_detailadopt"
+                                android:layout_gravity="center"
+                                android:background="@drawable/selector_btn_detailadopt"
+                                android:src="@drawable/ic_friendly"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/friendly_with_kids"
+                                android:textSize="@dimen/content_detailadopt"
+                                android:layout_marginTop="@dimen/top_margin_hint"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:layout_width="@dimen/width_btn_detailadopt"
+                                android:layout_height="@dimen/height_btn_detailadopt"
+                                android:layout_gravity="center"
+                                android:background="@drawable/selector_btn_detailadopt"
+                                android:src="@drawable/ic_neutered"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/neutered"
+                                android:textSize="@dimen/content_detailadopt"
+                                android:layout_marginTop="@dimen/top_margin_hint"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlack"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="@dimen/container_top"
+                        android:layout_marginBottom="@dimen/container_bot"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider"
+                        android:background="@color/colorAccent"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/age_content_detailadopt"
+                        android:text="@string/medical_notes"
+                        style="@style/BaseTextBlackBold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/content_detailadopt"
+                        android:text="@string/medical_notes_content"
+                        style="@style/BaseTextBlack"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/container_top"
+                        android:textSize="@dimen/age_content_detailadopt"
+                        android:text="@string/description"
+                        style="@style/BaseTextBlackBold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/content_detailadopt"
+                        android:text="@string/desc_content_detailadopt"
+                        style="@style/BaseTextBlack"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/container_top"
+                        android:layout_marginBottom="@dimen/container_bot"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/apply_as_adopter"
+                            style="@style/ButtonBaseDark"/>
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/container_start"
+                            android:src="@drawable/ic_chat"
+                            android:background="@drawable/selector_btn_dark"/>
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
 
