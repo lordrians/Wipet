@@ -81,4 +81,17 @@
     <dimen name="txt_cv_adopt_small">14sp</dimen>
     <dimen name="top_margin_cvadopt_small">2dp</dimen>
     <dimen name="height_logo_cvadopt">75dp</dimen>
+    <dimen name="width_img_account">120dp</dimen>
+    <dimen name="height_img_account">120dp</dimen>
+    <dimen name="top_margin_accountfragment">80dp</dimen>
+    <dimen name="name_accountfrag">24sp</dimen>
+    <dimen name="location_accountfrag">16sp</dimen>
+    <dimen name="txt_accountfrag">14sp</dimen>
+    <dimen name="radius_bg_cvadopt_accountfrag">10dp</dimen>
+    <dimen name="margin_btn_accountfrag">12dp</dimen>
+    <dimen name="desc_accountfrag">12sp</dimen>
+    <dimen name="top_margin_cvadopt_accountfrag">32dp</dimen>
+    <dimen name="title_accountfrag">18sp</dimen>
+    <dimen name="top_margin_btn_createcv">32dp</dimen>
+    <dimen name="height_img_detailadopt">300dp</dimen>
 </resources>

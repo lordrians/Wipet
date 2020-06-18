@@ -93,6 +93,25 @@
     <string name="email_ferrian">ferrianrp@gmail.com</string>
     <string name="no_wa">No WA</string>
     <string name="tlp_ferrian">081385558854</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="about">About</string>
+    <string name="about_content">An animal lover. have many pets at home.  I consider animals like my own family.</string>
+    <string name="create">Create</string>
+    <string name="desc_accountfrag">if you want to adopt you must have  CV adopt</string>
+    <string name="back">Back</string>
+    <string name="create_cv">Create CV</string>
+    <string name="about_you">About you</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="q1">Mengapa anda ingin mengadopsi hewan ?</string>
+    <string name="next">Next</string>
+    <string name="before">Before</string>
+    <string name="alamat_lengkap_content">Jl Cempaka ACM Blok i 21 Depok , Jawa Barat</string>
+    <string name="m2">m2</string>
+    <string name="berapa_banyak_orang">"Berapa Banyak orang yang tinggal di bangunan anda "</string>
+    <string name="berapa_banyak_hewan">"Berapa banyak hewan lain yang tinggal di bangunan  anda ? Beri penjelasan singkat  "</string>
+    <string name="berapa_banyak_hewan_content">"ada 2 kucing ras anggora dan 1 anjing  "</string>
+    <string name="dimana_hewan_tinggal">Dimana hewan yang anda ingin adopsi akan tinggal  ? Beri penjelasan singkat</string>
+    <string name="dimana_hewan_tinggal_content">bersama saya , di rumah kucing yang tersedia</string>
 
     <string-array name="pets_category">
         <item>Dog</item>
@@ -116,6 +135,15 @@
         <item>Abused</item>
         <item>Financial</item>
         <item>Owner Give Up</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="tipe_rumah">
+        <item>Home</item>
+        <item>Rent</item>
+        <item>Boarding House</item>
+        <item>Apartment</item>
+        <item>Warehouse</item>
         <item>Others</item>
     </string-array>
 </resources>

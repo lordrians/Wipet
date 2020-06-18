@@ -11,4 +11,6 @@
     <color name="subtext_horzdiscus_item">#80000000</color>
     <color name="grey">#80000000</color>
     <color name="background_soft_grey">#A8C4C4C4</color>
+    <color name="btn_dark_accountfrag">#FF700C</color>
+    <color name="bg_cvadopt">#FF9E59</color>
 </resources>

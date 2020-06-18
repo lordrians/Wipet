@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AccountFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/container_start"
+            android:layout_marginEnd="@dimen/container_end"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/width_img_account"
+                android:layout_height="@dimen/height_img_account"
+                android:layout_gravity="center"
+                android:src="@drawable/img_user"
+                android:layout_marginTop="@dimen/top_margin_accountfragment"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ferrian_r_p"
+                android:textSize="@dimen/name_accountfrag"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/top_margin_hint"
+                android:includeFontPadding="false"
+                style="@style/BaseTextBlackBold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/depok"
+                    android:textSize="@dimen/location_accountfrag"
+                    style="@style/BaseTextGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comma"
+                    android:textSize="@dimen/location_accountfrag"
+                    style="@style/BaseTextGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/jawa_barat"
+                    android:textSize="@dimen/location_accountfrag"
+                    style="@style/BaseTextGrey"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:textSize="@dimen/location_accountfrag"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/container_top"
+                android:background="@drawable/bg_left_line"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BaseTextGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textSize="@dimen/txt_accountfrag" />
+
+                <TextView
+                    style="@style/BaseTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                    android:text="@string/about_content"
+                    android:textSize="@dimen/txt_accountfrag" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_left_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BaseTextGrey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textSize="@dimen/txt_accountfrag" />
+
+                    <TextView
+                        style="@style/BaseTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                        android:text="@string/email_ferrian"
+                        android:textSize="@dimen/txt_accountfrag" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_top"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_left_line"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/BaseTextGrey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_wa"
+                        android:textSize="@dimen/txt_accountfrag" />
+
+                    <TextView
+                        style="@style/BaseTextBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_margin_cvadopt_small"
+                        android:text="@string/tlp_ferrian"
+                        android:textSize="@dimen/txt_accountfrag" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/top_margin_cvadopt_accountfrag"
+                android:background="@drawable/bg_cvadopt_accountfrag">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cv_adopt"
+                            style="@style/BaseTextBlackBold"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="6dp"
+                            android:src="@drawable/ic_warning"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desc_accountfrag"
+                        android:textSize="@dimen/desc_accountfrag"
+                        style="@style/BaseTextBlack"/>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/create"
+                    android:textSize="@dimen/txt_accountfrag"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_btn_accountfrag"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
