@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".activity.DetailAdoptionActivity">
 
     <ScrollView
@@ -28,7 +29,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingBottom="@dimen/container_bot"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/toolbar">
@@ -78,6 +78,115 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.appcompat.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_item_detailadopt"
+                    android:paddingStart="@dimen/container_start"
+                    android:paddingEnd="@dimen/container_end"
+                    android:layout_marginTop="@dimen/height_container_detailadopt"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name_cat"
+                                android:textSize="@dimen/name_detailadopt"
+                                android:fontFamily="@font/poppin"
+                                android:includeFontPadding="false"
+                                style="@style/BaseTextBlackBold"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="6dp"
+                                android:src="@drawable/ic_male_black"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/harga_detailadopt"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/poppin"
+                            android:layout_gravity="center"
+                            android:gravity="end"
+                            android:text="@string/harga"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/from"
+                            android:textSize="@dimen/from_detailadopt"
+                            style="@style/BaseTextGrey"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ferrianrp"
+                            android:textSize="@dimen/from_detailadopt"
+                            style="@style/BaseTextGrey"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-6dp"
+                            android:src="@drawable/ic_location_accentdark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/depok"
+                            android:textColor="@color/colorAccentDark"
+                            android:textSize="@dimen/location_detailadopt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/comma"
+                            android:textColor="@color/colorAccentDark"
+                            android:textSize="@dimen/location_detailadopt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/jawa_barat"
+                            android:textColor="@color/colorAccentDark"
+                            android:textSize="@dimen/location_detailadopt"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
 
             </FrameLayout>

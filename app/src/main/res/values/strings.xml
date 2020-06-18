@@ -112,6 +112,7 @@
     <string name="berapa_banyak_hewan_content">"ada 2 kucing ras anggora dan 1 anjing  "</string>
     <string name="dimana_hewan_tinggal">Dimana hewan yang anda ingin adopsi akan tinggal  ? Beri penjelasan singkat</string>
     <string name="dimana_hewan_tinggal_content">bersama saya , di rumah kucing yang tersedia</string>
+    <string name="from">"from "</string>
 
     <string-array name="pets_category">
         <item>Dog</item>

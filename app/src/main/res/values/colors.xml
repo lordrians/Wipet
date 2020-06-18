@@ -13,4 +13,5 @@
     <color name="background_soft_grey">#A8C4C4C4</color>
     <color name="btn_dark_accountfrag">#FF700C</color>
     <color name="bg_cvadopt">#FF9E59</color>
+    <color name="colorAccentDark">#FF700C</color>
 </resources>
