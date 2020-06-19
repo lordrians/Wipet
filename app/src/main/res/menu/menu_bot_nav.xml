@@ -3,26 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/botnav_home"
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:title="@string/home"/>
 
     <item
+        android:id="@+id/botnav_discussion"
         android:enabled="true"
         android:icon="@drawable/ic_discuss"
         android:title="@string/discussion"/>
 
     <item
+        android:id="@+id/botnav_adoption"
         android:enabled="true"
         android:icon="@drawable/ic_pets"
         android:title="@string/adopt"/>
 
     <item
+        android:id="@+id/botnav_notification"
         android:enabled="true"
         android:icon="@drawable/ic_notification"
         android:title="@string/notification"/>
 
     <item
+        android:id="@+id/botnav_account"
         android:enabled="true"
         android:icon="@drawable/ic_account"
         android:title="@string/account"/>

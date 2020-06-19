@@ -44,7 +44,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/adoption"
+        android:text="@string/discussion"
         android:textSize="@dimen/title_feature"
         style="@style/BaseTextBlackBoldContainer"
         app:layout_constraintEnd_toEndOf="parent"
