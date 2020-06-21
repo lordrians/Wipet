@@ -91,97 +91,9 @@
                     android:textSize="@dimen/title_accountfrag"
                     style="@style/BaseTextBlackBold"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/container_top"
-                    android:text="@string/no_wa"
-                    style="@style/BaseTextGrey"/>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintEnabled="false">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/tlp_ferrian"
-                        android:inputType="textMultiLine"
-                        android:maxLines="1"
-                        style="@style/TextAppearance.TextInputLayout">
-                    </com.google.android.material.textfield.TextInputEditText>
 
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/container_top"
-                    android:text="@string/email"
-                    style="@style/BaseTextGrey"/>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintEnabled="false">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/email_ferrian"
-                        android:inputType="textMultiLine"
-                        android:maxLines="1"
-                        style="@style/TextAppearance.TextInputLayout">
-                    </com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/container_top"
-                    android:text="@string/pekerjaan"
-                    style="@style/BaseTextGrey"/>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintEnabled="false">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/student"
-                        android:inputType="textMultiLine"
-                        android:maxLines="1"
-                        style="@style/TextAppearance.TextInputLayout">
-                    </com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/container_top"
-                    android:text="@string/q1"
-                    style="@style/BaseTextGrey"/>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintEnabled="false">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/tlp_ferrian"
-                        android:inputType="textMultiLine"
-                        android:maxLines="1"
-                        style="@style/TextAppearance.TextInputLayout">
-                    </com.google.android.material.textfield.TextInputEditText>
-
-                </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

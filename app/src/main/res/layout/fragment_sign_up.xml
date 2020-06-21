@@ -27,6 +27,7 @@
             android:layout_marginEnd="@dimen/container_end"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_username_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_signin_et"
@@ -34,6 +35,7 @@
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_username_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username"
@@ -45,6 +47,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_fullname_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
@@ -52,6 +55,27 @@
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_fullname_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fullname"
+                android:background="@drawable/bg_hint_text"
+                android:inputType="textEmailAddress"
+                style="@style/TextAppearance.TextInputLayout">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin_hint"
+            android:layout_marginStart="@dimen/container_start"
+            android:layout_marginEnd="@dimen/container_end">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
@@ -63,6 +87,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_password_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
@@ -70,6 +95,7 @@
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
@@ -81,6 +107,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_conf_password_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
@@ -88,6 +115,7 @@
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_conf_password_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/conf_password"
@@ -100,6 +128,7 @@
 
 
         <Button
+            android:id="@+id/btn_signup_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
@@ -112,6 +141,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
+            android:layout_marginBottom="@dimen/container_bot"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -122,6 +152,7 @@
                 android:textSize="@dimen/hint_input"/>
 
             <TextView
+                android:id="@+id/tv_signin_signupfrag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
@@ -131,103 +162,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/top_margin_hint"
-            android:layout_marginStart="@dimen/container_start"
-            android:layout_marginEnd="@dimen/container_end"
-            android:gravity="center"
-            android:orientation="horizontal">
 
-            <View
-                android:layout_width="15dp"
-                android:layout_height="@dimen/divider"
-                android:layout_weight="1"
-                android:background="@color/hint_color"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="@dimen/container_start"
-                android:paddingEnd="@dimen/container_end"
-                android:text="@string/OR"
-                android:textSize="@dimen/hint_input"/>
-            <View
-                android:layout_width="15dp"
-                android:layout_height="@dimen/divider"
-                android:layout_weight="1"
-                android:background="@color/hint_color"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/top_margin_hint"
-            android:layout_marginStart="@dimen/container_start"
-            android:layout_marginEnd="@dimen/container_end"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="1"
-                android:padding="@dimen/btn_pad_loganotheraccount"
-                android:background="@drawable/bg_hint_text"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/logo_google"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/google"
-                    android:textSize="@dimen/hint_input"
-                    android:textColor="@color/account_another_plat"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingStart="@dimen/container_start"
-                android:paddingEnd="@dimen/container_end"
-                android:text="@string/divider"/>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="1"
-                android:padding="@dimen/btn_pad_loganotheraccount"
-                android:background="@drawable/bg_hint_text"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/logo_facebook"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="@string/facebook"
-                    android:textSize="@dimen/hint_input"
-                    android:textColor="@color/account_another_plat"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
 
     </LinearLayout>
 

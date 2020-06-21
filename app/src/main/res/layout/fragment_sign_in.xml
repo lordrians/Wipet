@@ -20,6 +20,7 @@
             android:layout_gravity="center"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_username_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_signup_title"
@@ -27,6 +28,7 @@
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_username_signin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/username"
@@ -38,6 +40,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_password_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top_margin_hint"
@@ -45,6 +48,7 @@
             android:layout_marginEnd="@dimen/container_end">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password_signin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
@@ -57,6 +61,7 @@
 
 
         <Button
+            android:id="@+id/btn_signin_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_in"
@@ -79,7 +84,7 @@
                 android:textSize="@dimen/hint_input"/>
 
             <TextView
-                android:id="@+id/btn_signup_signfrag"
+                android:id="@+id/tv_btn_signup_signin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
@@ -129,12 +134,13 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/ll_btn_google_signin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_weight="1"
                 android:padding="@dimen/btn_pad_loganotheraccount"
-                android:background="@drawable/bg_hint_text"
+                android:background="@drawable/selector_btn_signup"
                 android:gravity="center">
 
                 <ImageView
@@ -161,12 +167,13 @@
                 android:text="@string/divider"/>
 
             <LinearLayout
+                android:id="@+id/ll_btn_facebook_signin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_weight="1"
                 android:padding="@dimen/btn_pad_loganotheraccount"
-                android:background="@drawable/bg_hint_text"
+                android:background="@drawable/selector_btn_signup"
                 android:gravity="center">
 
                 <ImageView

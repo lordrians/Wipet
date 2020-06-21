@@ -91,7 +91,7 @@
     <string name="contact">Contact</string>
     <string name="jwb_alasan">Karena ingin menambah hewan peliharaan</string>
     <string name="email_ferrian">ferrianrp@gmail.com</string>
-    <string name="no_wa">No WA</string>
+    <string name="no_wa">Phone Number / WhatsApp</string>
     <string name="tlp_ferrian">081385558854</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="about">About</string>
@@ -122,6 +122,24 @@
     <string name="medical_notes_content">"Muffin’s  is  obedient cat . it is love to play with  employer . cute cat , active , agile and clean cat. "</string>
     <string name="desc_content_detailadopt">Muffin’s  is  obedient cat . it is love to play with  employer . cute cat , active , agile and clean cat.  Muffins was given vaksin and flea medicine.</string>
     <string name="apply_as_adopter">Apply as Adopter</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="this_field_is_required">This field is required</string>
+    <string name="password_doesnt_match">Password doesn\'t match</string>
+    <string name="registering">Registering...</string>
+    <string name="success">Success</string>
+    <string name="fullname">Fullname</string>
+    <string name="invalid_email_address">Invalid email address</string>
+    <string name="this_field_min_char">Minimum 8 characters</string>
+    <string name="logging_in">Logging in...</string>
+    <string name="edit_photo">Edit Photo</string>
+    <string name="about_me">About me</string>
+    <string name="province">Province</string>
+    <string name="kelurahan">Kelurahan</string>
+    <string name="titik_koma">" : "</string>
+    <string name="cities">Cities</string>
+    <string name="districts">Sub-District</string>
+    <string name="village">Village (Kelurahan)</string>
 
     <string-array name="pets_category">
         <item>Dog</item>
