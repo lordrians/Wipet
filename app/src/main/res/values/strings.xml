@@ -140,6 +140,7 @@
     <string name="cities">Cities</string>
     <string name="districts">Sub-District</string>
     <string name="village">Village (Kelurahan)</string>
+    <string name="save">Save</string>
 
     <string-array name="pets_category">
         <item>Dog</item>

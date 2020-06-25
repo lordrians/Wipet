@@ -11,4 +11,5 @@ public class Api {
     public static final String getKecamatan = HOME + "/getKecamatan";
     public static final String getKelurahan = HOME + "/getKelurahan";
 
+    public static final String SAVE_PROFILE = HOME + "/saveProfile" ;
 }

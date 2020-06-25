@@ -20,13 +20,15 @@
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_photo_editaccount"
                 android:layout_width="@dimen/width_img_account"
                 android:layout_height="@dimen/height_img_account"
                 android:layout_gravity="center"
-                android:src="@drawable/img_user"
+                android:src="@color/grey"
                 android:layout_marginTop="@dimen/top_margin_accountfragment"/>
 
             <TextView
+                android:id="@+id/tv_btn_edit_photo_editaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/edit_photo"
@@ -52,11 +54,13 @@
                 style="@style/BaseTextGrey"/>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_name_editaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name_editaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -74,11 +78,13 @@
                 style="@style/BaseTextGrey"/>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_email_editaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email_editaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -96,11 +102,13 @@
                 style="@style/BaseTextGrey"/>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_phone_editaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phone_editaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
@@ -118,11 +126,13 @@
                 style="@style/BaseTextGrey"/>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_about_editaccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_about_editaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
@@ -191,6 +201,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_save_editaccount"
+                android:layout_marginTop="@dimen/container_top"
+                android:layout_marginBottom="@dimen/container_bot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                style="@style/ButtonBase"/>
 
         </LinearLayout>
 
