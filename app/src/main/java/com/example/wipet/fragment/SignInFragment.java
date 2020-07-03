@@ -91,7 +91,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener, Te
                     SharedPreferences userInfo = getContext().getSharedPreferences(GlobalVar.SP_USER_INFO, 0);
                     SharedPreferences.Editor editor = userInfo.edit();
                     editor.putString(GlobalVar.VAR_TOKEN, object.getString("token"));
-                    editor.putString(GlobalVar.VAR_ID_USER, user.getString("id"));
+                    editor.putInt(GlobalVar.VAR_ID_USER, user.getInt("id"));
                     editor.putString(GlobalVar.VAR_FULLNAME, user.getString("name"));
                     editor.putString(GlobalVar.VAR_USERNAME, user.getString("username"));
                     editor.putString(GlobalVar.VAR_EMAIL, user.getString("email"));

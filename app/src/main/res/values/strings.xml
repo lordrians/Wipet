@@ -95,7 +95,7 @@
     <string name="tlp_ferrian">081385558854</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="about">About</string>
-    <string name="about_content">An animal lover. have many pets at home.  I consider animals like my own family.</string>
+    <string name="about_content">About you...</string>
     <string name="create">Create</string>
     <string name="desc_accountfrag">if you want to adopt you must have  CV adopt</string>
     <string name="back">Back</string>
@@ -141,6 +141,14 @@
     <string name="districts">Sub-District</string>
     <string name="village">Village (Kelurahan)</string>
     <string name="save">Save</string>
+    <string name="job">Job</string>
+    <string name="job_ops">Job (optional)</string>
+    <string name="this_field_min5_char">Minimum 5 characters</string>
+    <string name="cv_created">Your CV has been created</string>
+    <string name="name_user">Your Name</string>
+    <string name="city">City</string>
+    <string name="email_content">Your email</string>
+    <string name="phone_content">Your phone number</string>
 
     <string-array name="pets_category">
         <item>Dog</item>
@@ -166,6 +174,7 @@
         <item>Owner Give Up</item>
         <item>Others</item>
     </string-array>
+
 
     <string-array name="tipe_rumah">
         <item>Home</item>

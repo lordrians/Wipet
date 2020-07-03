@@ -13,6 +13,13 @@ public class GlobalVar {
     public static final String VAR_FULLNAME = "VAR_FULLNAME";
     public static final String VAR_USERNAME = "VAR_USERNAME";
     public static final String VAR_EMAIL = "VAR_EMAIL";
+    public static final String VAR_PHONE = "VAR_PHONE";
+    public static final String VAR_JOB = "VAR_JOB";
+    public static final String VAR_ABOUT = "VAR_ABOUT";
+    public static final String VAR_NAMA_KELURAHAN = "VAR_NAMA_KELURAHAN";
+    public static final String VAR_NAMA_KECAMATAN = "VAR_NAMA_KECAMATAN";
+    public static final String VAR_NAMA_KOTA = "VAR_NAMA_KOTA";
+    public static final String VAR_NAMA_PROVINSI = "VAR_NAMA_PROVINSI";
 
     public static final String TIME_LONG_TOAST = "LONG";
     public static final String TIME_SHORT_TOAST = "SHORT";

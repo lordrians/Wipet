@@ -17,16 +17,18 @@
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_photo_accountfrag"
                 android:layout_width="@dimen/width_img_account"
                 android:layout_height="@dimen/height_img_account"
                 android:layout_gravity="center"
-                android:src="@drawable/img_user"
+                android:src="@color/grey"
                 android:layout_marginTop="@dimen/top_margin_accountfragment"/>
 
             <TextView
+                android:id="@+id/tv_name_accountfrag"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ferrian_r_p"
+                android:text="@string/name_user"
                 android:textSize="@dimen/name_accountfrag"
                 android:gravity="center"
                 android:layout_marginTop="@dimen/top_margin_hint"
@@ -40,9 +42,10 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/tv_kota_accountfrag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/depok"
+                    android:text="@string/city"
                     android:textSize="@dimen/location_accountfrag"
                     style="@style/BaseTextGrey"/>
 
@@ -54,17 +57,18 @@
                     style="@style/BaseTextGrey"/>
 
                 <TextView
+                    android:id="@+id/tv_provinsi_accountfrag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
-                    android:text="@string/jawa_barat"
+                    android:text="@string/province"
                     android:textSize="@dimen/location_accountfrag"
                     style="@style/BaseTextGrey"/>
 
             </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_btn_edit_account"
+                android:id="@+id/tv_btn_edit_accountfrag"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/edit_profile"
@@ -88,6 +92,7 @@
                     android:textSize="@dimen/txt_accountfrag" />
 
                 <TextView
+                    android:id="@+id/tv_about_accountfrag"
                     style="@style/BaseTextBlack"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -119,11 +124,12 @@
                         android:textSize="@dimen/txt_accountfrag" />
 
                     <TextView
+                        android:id="@+id/tv_email_accountfrag"
                         style="@style/BaseTextBlack"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/top_margin_cvadopt_small"
-                        android:text="@string/email_ferrian"
+                        android:text="@string/email_content"
                         android:textSize="@dimen/txt_accountfrag" />
 
                 </LinearLayout>
@@ -144,11 +150,12 @@
                         android:textSize="@dimen/txt_accountfrag" />
 
                     <TextView
+                        android:id="@+id/tv_phone_accountfrag"
                         style="@style/BaseTextBlack"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/top_margin_cvadopt_small"
-                        android:text="@string/tlp_ferrian"
+                        android:text="@string/phone_content"
                         android:textSize="@dimen/txt_accountfrag" />
 
                 </LinearLayout>
@@ -180,6 +187,7 @@
                             style="@style/BaseTextBlackBold"/>
 
                         <ImageView
+                            android:id="@+id/iv_notif_cv_accountfrag"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginStart="6dp"
@@ -188,6 +196,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/tv_warning_cv_accountfrag"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/desc_accountfrag"
@@ -198,6 +207,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/btn_create_cv_accountfrag"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
