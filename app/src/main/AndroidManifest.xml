@@ -25,7 +25,8 @@
         <activity android:name=".activity.CreateAdoptionActivity" />
         <activity android:name=".activity.DetailAdoptionActivity" />
         <activity android:name=".activity.ListAdoptionActivity" />
-        <activity android:name=".activity.CreateDiscussionActivity" />
+        <activity android:name=".activity.CreateDiscussionActivity">
+        </activity>
         <activity android:name=".activity.DetailDiscussionActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>

@@ -127,7 +127,8 @@ public class EditAccountActivity extends AppCompatActivity implements TextWatche
 //            if (validate()){
 //                save();
 //            }
-            save();
+//            save();
+            Log.d("bitphoto" ,"bit photo :" + GlobalFunc.bitmapToString(bitPhoto));
         });
 
         etName.addTextChangedListener(this);

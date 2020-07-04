@@ -3,6 +3,7 @@ package com.example.wipet;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Base64;
 import android.widget.Toast;
 
@@ -25,7 +26,7 @@ public class GlobalFunc {
     public static String bitmapToString(Bitmap bitmap){
         if (bitmap != null){
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 70, byteArrayOutputStream);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
             byte[] imageByte = byteArrayOutputStream.toByteArray();
             return Base64.encodeToString(imageByte, Base64.DEFAULT);
         } else {
@@ -39,6 +40,18 @@ public class GlobalFunc {
         HashMap<String, String> map = new HashMap<>();
         map.put("Authorization", "Bearer " + token);
         return map;
+    }
+
+    public static Bitmap stringToBitmap(String photo){
+        try {
+            byte[] encodeByte = Base64.decode(photo, Base64.DEFAULT);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(encodeByte,0,encodeByte.length);
+            return bitmap;
+        } catch (Exception e){
+            e.getMessage();
+            return null;
+        }
+
     }
     
 
