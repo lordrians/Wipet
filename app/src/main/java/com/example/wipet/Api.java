@@ -13,4 +13,8 @@ public class Api {
     public static final String getOwnCv = HOME + "/getOwnCv";
 
     public static final String SAVE_PROFILE = HOME + "/saveProfile" ;
+
+    //discussion
+    public static final String CREATE_DISCUSSION = HOME + "/diskusi/create" ;
+    public static final String DETAIL_DISCUSSION = HOME + "/diskusi/detail_discussion" ;
 }

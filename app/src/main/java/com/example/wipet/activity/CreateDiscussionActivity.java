@@ -11,25 +11,42 @@ import android.content.ClipData;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.example.wipet.Api;
 import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
 import com.example.wipet.R;
 import com.example.wipet.adapter.PhotoDiscussionAdapter;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CreateDiscussionActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageView btnClose;
@@ -42,6 +59,7 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
     private ArrayList<Bitmap> bitmapArrayList;
     private ClipData clipDataPhoto ;
     private Toolbar toolbar;
+    private ArrayList<String> stringPhotoArrList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +94,6 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
     }
 
     private void photoSetup() {
-        ArrayList<String> stringPhotoArrList = new ArrayList<>();
         for (int i = 0; i < bitmapArrayList.size(); i++){
             stringPhotoArrList.add(GlobalFunc.bitmapToString(bitmapArrayList.get(i)));
         }
@@ -97,11 +114,54 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
                 break;
 
             case R.id.tv_btn_publish_createdisc:
-                finish();
+
+                publish();
+
                 break;
         }
 
     }
+
+    private void publish() {
+        StringRequest request = new StringRequest(StringRequest.Method.POST, Api.CREATE_DISCUSSION, response -> {
+            try {
+                JSONObject object = new JSONObject(response);
+                if (object.getBoolean("success")) {
+                    Toast.makeText(getApplicationContext(), "Sukses", Toast.LENGTH_SHORT).show();
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+                    Toast.makeText(getApplicationContext(),error.getMessage()+"a",Toast.LENGTH_SHORT).show();
+
+
+            }
+        }){
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                return GlobalFunc.getHeaders(getApplicationContext());
+            }
+
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                HashMap<String,String> map = new HashMap<>();
+                //ngirim arraylist
+                String data = new Gson().toJson(stringPhotoArrList);
+                map.put("title", etTitle.getText().toString().trim());
+                map.put("photo", data);
+                return map;
+            }
+        };
+        Volley.newRequestQueue(getApplicationContext()).add(request);
+    }
+
+
 
     private void pickImage() {
 
@@ -131,7 +191,8 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
                 for (int i = 0; i < clipDataPhoto.getItemCount(); i++){
                     Uri photoUri = clipDataPhoto.getItemAt(i).getUri();
                     try {
-                        Bitmap bitPhoto = MediaStore.Images.Media.getBitmap(getContentResolver(),photoUri);
+                        InputStream inputStream = getContentResolver().openInputStream(photoUri);
+                        Bitmap bitPhoto = BitmapFactory.decodeStream(inputStream);
                         bitmapArrayList.add(bitPhoto);
                     } catch (IOException e){
                         e.printStackTrace();
@@ -142,7 +203,8 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
             } else {
                 Uri photoUri = data.getData();
                 try {
-                    Bitmap bitPhoto = MediaStore.Images.Media.getBitmap(getContentResolver(),photoUri);
+                    InputStream inputStream = getContentResolver().openInputStream(photoUri);
+                    Bitmap bitPhoto = BitmapFactory.decodeStream(inputStream);
                     bitmapArrayList.add(bitPhoto);
 
                     photoSetup();

@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/toolbar_detaildisc"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_toolbar"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,6 +87,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
+                    android:id="@+id/iv_back_detaildisc"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:background="@drawable/selector_list_item"
@@ -129,7 +130,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_detaildisc">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -137,6 +138,7 @@
                 android:orientation="horizontal">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_userphoto_detaildisc"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:src="@drawable/img_user"/>
@@ -154,6 +156,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/tv_username_detaildisc"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/username"
@@ -170,6 +173,7 @@
                             style="@style/BaseTextBlack"/>
 
                         <TextView
+                            android:id="@+id/tv_kota_detaildisc"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="@string/jakarta"
@@ -186,6 +190,7 @@
                         android:layout_weight="1"
                         android:orientation="horizontal">
                         <TextView
+                            android:id="@+id/tv_create_at_detaildisc"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="@string/date"
@@ -219,6 +224,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tv_title_detaildisc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/title_discus_horizontal_item"
@@ -226,10 +232,12 @@
                 style="@style/BaseTextBlackBold"/>
 
             <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_photo_detaildisc"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_img_detaildiscus"/>
 
             <TextView
+                android:id="@+id/tv_content_detaildisc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="@tools:sample/full_names"
