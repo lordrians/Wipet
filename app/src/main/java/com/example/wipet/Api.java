@@ -24,4 +24,10 @@ public class Api {
     public static final String CREATE_DISCUSSION = HOME + "/diskusi/create" ;
     public static final String DETAIL_DISCUSSION = HOME + "/diskusi/detail_discussion" ;
     public static final String SHOW_LIST_DISCUSSION = HOME + "/diskusi/show_list" ;
+
+
+    //Comments
+    public static final String CREATE_COMMENT = HOME + "/comment/create" ;
+    //Like
+    public static final String CREATE_LIKE = HOME + "/like/create" ;
 }
