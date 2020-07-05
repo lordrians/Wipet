@@ -10,6 +10,7 @@
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:hintEnabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -20,10 +21,10 @@
             android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtinputlay"
+                android:id="@+id/et_comment_detaildisc"
                 style="@style/BaseTextBlack"
-                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:background="@drawable/bg_reply_comment"
                 android:hint="@string/reply"
                 android:textColorHint="@color/hint_color"
@@ -31,12 +32,12 @@
                 android:maxLines="5"
                 android:inputType="textCapSentences|textMultiLine"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+                app:layout_constraintEnd_toStartOf="@id/iv_sendcomment_detaildisc"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/iv_sendcomment_detaildisc"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/margin_start_send_reply"
@@ -44,7 +45,7 @@
                 android:src="@drawable/ic_send_reply"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/txtinputlay"
+                app:layout_constraintStart_toEndOf="@id/et_comment_detaildisc"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -251,6 +252,7 @@
                 android:background="@color/hint_color"/>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comment_detaildisc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:listitem="@layout/item_comment"/>

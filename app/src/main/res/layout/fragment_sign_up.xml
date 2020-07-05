@@ -30,6 +30,7 @@
             android:id="@+id/etl_username_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             android:layout_marginTop="@dimen/top_margin_signin_et"
             android:layout_marginStart="@dimen/container_start"
             android:layout_marginEnd="@dimen/container_end">
@@ -50,6 +51,7 @@
             android:id="@+id/etl_fullname_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
             android:layout_marginEnd="@dimen/container_end">
@@ -70,6 +72,7 @@
             android:id="@+id/etl_email_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
             android:layout_marginEnd="@dimen/container_end">
@@ -90,6 +93,7 @@
             android:id="@+id/etl_password_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
             android:layout_marginEnd="@dimen/container_end">
@@ -110,6 +114,7 @@
             android:id="@+id/etl_conf_password_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
             android:layout_marginEnd="@dimen/container_end">

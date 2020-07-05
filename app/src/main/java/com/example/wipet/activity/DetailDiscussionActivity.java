@@ -2,6 +2,8 @@ package com.example.wipet.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.app.ProgressDialog;
@@ -18,8 +20,11 @@ import com.example.wipet.Api;
 import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
 import com.example.wipet.R;
+import com.example.wipet.adapter.CommentAdapter;
 import com.example.wipet.adapter.PhotoDiscussionAdapter;
+import com.example.wipet.object.Comment;
 import com.example.wipet.object.Discussion;
+import com.example.wipet.object.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,6 +48,7 @@ public class DetailDiscussionActivity extends AppCompatActivity {
     private CircleImageView ivUserPhoto;
     private ViewPager2 vpPhoto;
     private ProgressDialog dialog;
+    private RecyclerView rvComment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +67,10 @@ public class DetailDiscussionActivity extends AppCompatActivity {
         tvTitle = findViewById(R.id.tv_title_detaildisc);
         tvUsername = findViewById(R.id.tv_username_detaildisc);
         vpPhoto = findViewById(R.id.vp_photo_detaildisc);
+        rvComment = findViewById(R.id.rv_comment_detaildisc);
+
+        rvComment.setHasFixedSize(true);
+        rvComment.setLayoutManager(new LinearLayoutManager(this));
 
         Discussion paketDiscussion = getIntent().getParcelableExtra("discussion");
         int idDiscussion = paketDiscussion.getId();
@@ -114,6 +124,32 @@ public class DetailDiscussionActivity extends AppCompatActivity {
                     }
                     PhotoDiscussionAdapter adapter = new PhotoDiscussionAdapter(this, stringPhotoArrList, GlobalVar.STRING_FORMAT);
                     vpPhoto.setAdapter(adapter);
+
+                    //Comment
+                    if (discussion.getJSONArray("comment").length() > 0){
+                        JSONArray commentJsonArr = new JSONArray(discussion.getString("comment"));
+                        ArrayList<Comment> commentArrayList = new ArrayList<>();
+                        for (int i = 0; i < commentJsonArr.length(); i++){
+                            JSONObject commentObj = commentJsonArr.getJSONObject(i);
+                            JSONObject userCommentObj = commentObj.getJSONObject("user");
+                            Comment comment = new Comment();
+                            User userComment = new User();
+                            userComment.setId(userCommentObj.getInt("id"));
+                            userComment.setUsername(userCommentObj.getString("username"));
+                            userComment.setPhoto(userCommentObj.getString("photo"));
+                            comment.setId(commentObj.getInt("id"));
+                            comment.setComment(commentObj.getString("comment"));
+                            comment.setCreated_at(commentObj.getString("created_at"));
+                            comment.setUser(userComment);
+                            commentArrayList.add(comment);
+                            Toast.makeText(getApplicationContext(),userComment.getUsername().toString(), Toast.LENGTH_SHORT).show();
+                        }
+                        CommentAdapter commentAdapter = new CommentAdapter(getApplicationContext(),commentArrayList);
+                        rvComment.setAdapter(commentAdapter);
+
+                    }
+
+
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

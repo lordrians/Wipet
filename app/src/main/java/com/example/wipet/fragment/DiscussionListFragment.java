@@ -120,18 +120,15 @@ public class DiscussionListFragment extends Fragment {
                     }
                     adapter = new DiscussionListAdapter(getContext(),discussionArrayList);
                     rvDiscussion.setAdapter(adapter);
-                    Toast.makeText(getContext(),String.valueOf(discussionArrayList.size())+"C", Toast.LENGTH_SHORT).show();
                     dialog.dismiss();
 
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
-                Toast.makeText(getContext(),e.getMessage()+"A", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         },error -> {
             error.printStackTrace();
-            Toast.makeText(getContext(),error.getMessage()+"B", Toast.LENGTH_SHORT).show();
             dialog.dismiss();
         }){
             @Override

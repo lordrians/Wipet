@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".fragment.SignInFragment">
@@ -23,6 +24,7 @@
             android:id="@+id/etl_username_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             android:layout_marginTop="@dimen/top_signup_title"
             android:layout_marginStart="@dimen/container_start"
             android:layout_marginEnd="@dimen/container_end">
@@ -43,6 +45,7 @@
             android:id="@+id/etl_password_signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:hintEnabled="false"
             android:layout_marginTop="@dimen/top_margin_hint"
             android:layout_marginStart="@dimen/container_start"
             android:layout_marginEnd="@dimen/container_end">

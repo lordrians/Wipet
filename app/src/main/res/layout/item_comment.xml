@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_marginTop="@dimen/margin_top_comment"
+    android:id="@+id/item_layout_comment"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="wrap_content"
+        android:id="@+id/iv_photo_item_comment"
+        android:layout_width="@dimen/width_img_comment"
         android:layout_height="@dimen/height_img_comment"
         android:src="@drawable/img_user"/>
 
@@ -23,6 +25,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/tv_username_item_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/username"
@@ -39,6 +42,7 @@
                 style="@style/BaseTextBlack"/>
 
             <TextView
+                android:id="@+id/tv_date_item_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/a_day_ago"
@@ -55,6 +59,7 @@
             android:layout_weight="1"
             android:orientation="horizontal">
             <TextView
+                android:id="@+id/tv_content_item_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 tools:text="@string/comment"

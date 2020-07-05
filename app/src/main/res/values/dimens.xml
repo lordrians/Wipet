@@ -106,4 +106,5 @@
     <dimen name="height_btn_detailadopt">45dp</dimen>
     <dimen name="content_detailadopt">14sp</dimen>
     <dimen name="width_img_photo_account_detaildisc">50dp</dimen>
+    <dimen name="width_img_comment">40dp</dimen>
 </resources>
