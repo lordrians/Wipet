@@ -39,7 +39,7 @@
     <dimen name="like_discuss_vertical_item">14sp</dimen>
     <dimen name="comment_discuss_vertical_item">15sp</dimen>
     <dimen name="top_divider_discussion_list_vertical">16dp</dimen>
-    <dimen name="container_discussion_vertical_end">32</dimen>
+    <dimen name="container_discussion_vertical_end">32dp</dimen>
     <dimen name="container_discussion_vertical_start">32dp</dimen>
     <dimen name="bot_divider_discussion_list_vertical">16dp</dimen>
     <dimen name="reply_comment">14sp</dimen>
@@ -52,7 +52,7 @@
     <dimen name="height_container_user_detaildiscus">56dp</dimen>
     <dimen name="item_userowndiscus_detaildiscus">16sp</dimen>
     <dimen name="title_detail_discus">24sp</dimen>
-    <dimen name="height_img_detaildiscus">185dp</dimen>
+    <dimen name="height_img_detaildiscus">225dp</dimen>
     <dimen name="txt_detail_discus">16sp</dimen>
     <dimen name="height_img_comment">40dp</dimen>
     <dimen name="item_discuss_comment">14sp</dimen>
@@ -105,4 +105,5 @@
     <dimen name="width_btn_detailadopt">45dp</dimen>
     <dimen name="height_btn_detailadopt">45dp</dimen>
     <dimen name="content_detailadopt">14sp</dimen>
+    <dimen name="width_img_photo_account_detaildisc">50dp</dimen>
 </resources>

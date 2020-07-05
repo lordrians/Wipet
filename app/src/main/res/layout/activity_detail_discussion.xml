@@ -139,9 +139,9 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_userphoto_detaildisc"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/width_img_photo_account_detaildisc"
                     android:layout_height="match_parent"
-                    android:src="@drawable/img_user"/>
+                    android:src="@color/grey"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -176,7 +176,7 @@
                             android:id="@+id/tv_kota_detaildisc"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="@string/jakarta"
+                            android:text="@string/city"
                             android:textSize="@dimen/item_userowndiscus_detaildiscus"
                             android:gravity="center_vertical"
                             android:layout_marginStart="6dp"
@@ -193,7 +193,7 @@
                             android:id="@+id/tv_create_at_detaildisc"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="@string/date"
+                            android:text="@string/date_"
                             android:textSize="@dimen/item_userowndiscus_detaildiscus"
                             android:gravity="center_vertical"
                             style="@style/BaseTextGrey"/>
@@ -207,14 +207,14 @@
                             android:layout_marginStart="6dp"
                             style="@style/BaseTextGrey"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/time"
-                            android:textSize="@dimen/item_userowndiscus_detaildiscus"
-                            android:gravity="center_vertical"
-                            android:layout_marginStart="6dp"
-                            style="@style/BaseTextGrey"/>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:text="@string/time"-->
+<!--                            android:textSize="@dimen/item_userowndiscus_detaildiscus"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:layout_marginStart="6dp"-->
+<!--                            style="@style/BaseTextGrey"/>-->
 
                     </LinearLayout>
 

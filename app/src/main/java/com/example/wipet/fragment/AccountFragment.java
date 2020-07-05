@@ -74,7 +74,7 @@ public class AccountFragment extends Fragment {
 
     private void checkCV() {
         Toast.makeText(getContext(),"Fragment",Toast.LENGTH_SHORT).show();
-        StringRequest request = new StringRequest(StringRequest.Method.GET, Api.getOwnCv, response -> {
+        StringRequest request = new StringRequest(StringRequest.Method.POST, Api.getOwnCv, response -> {
             try {
                 JSONObject object = new JSONObject(response);
                 if (object.getBoolean("success")){
@@ -105,7 +105,7 @@ public class AccountFragment extends Fragment {
                     }
                     if (!object.getString("photo").isEmpty()){
                         Glide.with(getContext())
-                                .load(Api.BASE + "storage/photo/user_photo/" + object.getString("photo"))
+                                .load(Api.DIR_USER_PHOTO + object.getString("photo"))
                                 .centerCrop()
                                 .into(ivPhoto);
                     }

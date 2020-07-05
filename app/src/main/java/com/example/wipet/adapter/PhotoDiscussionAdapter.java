@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.wipet.Api;
 import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
 import com.example.wipet.R;
@@ -42,7 +43,7 @@ public class PhotoDiscussionAdapter extends RecyclerView.Adapter<PhotoDiscussion
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         if (format == GlobalVar.STRING_FORMAT){
             Glide.with(mContext)
-                    .load(arrayListPhoto.get(position).toString())
+                    .load(Api.DIR_DISCUSSION_PHOTO + arrayListPhoto.get(position))
                     .into(holder.ivPhoto);
         } else {
             ArrayList<Bitmap> bitmapArrayList = new ArrayList<>();

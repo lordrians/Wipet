@@ -7,6 +7,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -59,6 +60,7 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
     private ArrayList<Bitmap> bitmapArrayList;
     private ClipData clipDataPhoto ;
     private Toolbar toolbar;
+    private ProgressDialog dialog;
     private ArrayList<String> stringPhotoArrList = new ArrayList<>();
 
     @Override
@@ -85,7 +87,8 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
         toolbar = findViewById(R.id.toolbar_creatdisc);
 
         setSupportActionBar(toolbar);
-
+        dialog = new ProgressDialog(this);
+        dialog.setCancelable(false);
 
         btnAddImage.setOnClickListener(this);
         btnClose.setOnClickListener(this);
@@ -123,25 +126,26 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
     }
 
     private void publish() {
+        dialog.setMessage("Posting...");
+        dialog.show();
         StringRequest request = new StringRequest(StringRequest.Method.POST, Api.CREATE_DISCUSSION, response -> {
             try {
                 JSONObject object = new JSONObject(response);
                 if (object.getBoolean("success")) {
                     Toast.makeText(getApplicationContext(), "Sukses", Toast.LENGTH_SHORT).show();
+
+                    dialog.dismiss();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
             }
 
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
+        }, error -> {
+            Toast.makeText(getApplicationContext(),error.getMessage()+"a",Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
 
-                    Toast.makeText(getApplicationContext(),error.getMessage()+"a",Toast.LENGTH_SHORT).show();
-
-
-            }
         }){
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {

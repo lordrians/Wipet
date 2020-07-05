@@ -21,13 +21,14 @@ public class GlobalVar {
     public static final String VAR_NAMA_KOTA = "VAR_NAMA_KOTA";
     public static final String VAR_NAMA_PROVINSI = "VAR_NAMA_PROVINSI";
 
+
     public static final String TIME_LONG_TOAST = "LONG";
     public static final String TIME_SHORT_TOAST = "SHORT";
-
     //code status
     public static final Integer MULTIPLE_IMAGE_CODE = 12;
     public static final Integer BITMAP_FORMAT = 1;
     public static final Integer STRING_FORMAT = 2;
+
 
 
 }

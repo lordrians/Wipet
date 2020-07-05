@@ -149,6 +149,7 @@
     <string name="city">City</string>
     <string name="email_content">Your email</string>
     <string name="phone_content">Your phone number</string>
+    <string name="date_" />
 
     <string-array name="pets_category">
         <item>Dog</item>

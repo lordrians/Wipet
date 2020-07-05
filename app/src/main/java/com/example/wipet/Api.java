@@ -14,7 +14,14 @@ public class Api {
 
     public static final String SAVE_PROFILE = HOME + "/saveProfile" ;
 
+    //Directory in server
+
+    public static final String BASE_PHOTO = BASE + "storage/photo";
+    public static final String DIR_USER_PHOTO = BASE_PHOTO + "/user_photo/";
+    public static final String DIR_DISCUSSION_PHOTO = BASE_PHOTO + "/diskusi/";
+
     //discussion
     public static final String CREATE_DISCUSSION = HOME + "/diskusi/create" ;
     public static final String DETAIL_DISCUSSION = HOME + "/diskusi/detail_discussion" ;
+    public static final String SHOW_LIST_DISCUSSION = HOME + "/diskusi/show_list" ;
 }
