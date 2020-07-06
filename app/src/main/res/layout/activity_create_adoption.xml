@@ -21,7 +21,7 @@ tools:context=".activity.CreateAdoptionActivity">
 
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/toolbar_createadopt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@ tools:context=".activity.CreateAdoptionActivity">
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/iv_close_createadopt"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:background="@drawable/selector_list_item"
@@ -55,7 +55,7 @@ tools:context=".activity.CreateAdoptionActivity">
                     android:text="@string/create_adopt"
                     android:textSize="@dimen/txt_title_toolbar"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                    app:layout_constraintStart_toEndOf="@id/iv_close_createadopt"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -71,7 +71,7 @@ tools:context=".activity.CreateAdoptionActivity">
             android:layout_marginEnd="@dimen/container_end"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+            app:layout_constraintTop_toBottomOf="@id/toolbar_createadopt">
 
             <TextView
                 android:layout_width="match_parent"
@@ -80,6 +80,7 @@ tools:context=".activity.CreateAdoptionActivity">
                 style="@style/BaseTextBlack"/>
 
             <Spinner
+                android:id="@+id/spin_petcategory_createadopt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
@@ -94,20 +95,22 @@ tools:context=".activity.CreateAdoptionActivity">
                 style="@style/BaseTextBlack"/>
 
             <Spinner
+                android:id="@+id/spin_category_createadopt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
                 style="@style/Widget.AppCompat.Spinner.Underlined"
-                android:entries="@array/pets_category"/>
+                android:entries="@array/cat_type"/>
 
             <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_photo_createadopt"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_img_detaildiscus"
                 android:layout_marginTop="@dimen/top_margin_hint"
-                android:background="@color/hint_color"
-                android:visibility="gone"/>
+                android:background="@color/hint_color"/>
 
             <Button
+                android:id="@+id/btn_addimage_createadopt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/top_margin_hint"
@@ -127,6 +130,31 @@ tools:context=".activity.CreateAdoptionActivity">
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name_createadopt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_cat"
+                    android:inputType="textMultiLine"
+                    android:maxLines="2"
+                    style="@style/TextAppearance.TextInputLayout">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_hint"
+                android:text="@string/price"
+                style="@style/BaseTextBlack"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_price_createadopt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/name_cat"
@@ -155,6 +183,7 @@ tools:context=".activity.CreateAdoptionActivity">
                     app:hintEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_age_createadopt"
                         android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:hint="@string/age"
@@ -185,6 +214,7 @@ tools:context=".activity.CreateAdoptionActivity">
                 style="@style/BaseTextBlack"/>
 
             <Spinner
+                android:id="@+id/spin_size_createadopt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
@@ -197,26 +227,15 @@ tools:context=".activity.CreateAdoptionActivity">
                 android:layout_marginTop="@dimen/top_margin_hint"
                 android:text="@string/animal_sex"
                 style="@style/BaseTextBlack"/>
-            
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/height_animal_sex"
-                android:orientation="horizontal">
 
-                <ImageButton
-                    android:layout_width="@dimen/width_animal_sex"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/selector_img_animalsex"
-                    android:src="@drawable/ic_female_black"/>
+            <Spinner
+                android:id="@+id/spin_sex_createadopt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:entries="@array/sex"/>
 
-                <ImageButton
-                    android:layout_width="@dimen/width_animal_sex"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/container_start"
-                    android:background="@drawable/selector_img_animalsex"
-                    android:src="@drawable/ic_male_black"/>
-
-            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -226,6 +245,7 @@ tools:context=".activity.CreateAdoptionActivity">
                 style="@style/BaseTextBlack"/>
 
             <Spinner
+                android:id="@+id/spin_backgroundstory_detailadopt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
@@ -245,6 +265,7 @@ tools:context=".activity.CreateAdoptionActivity">
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_desc_detailadopt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="5"
@@ -268,6 +289,7 @@ tools:context=".activity.CreateAdoptionActivity">
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_medicalnotes_detailadopt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="5"
@@ -286,22 +308,26 @@ tools:context=".activity.CreateAdoptionActivity">
                 style="@style/BaseTextBlack"/>
 
             <CheckBox
+                android:id="@+id/cb_vaccinated_detailadopt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/BaseTextBlack"
                 android:text="@string/vaccinate"/>
             <CheckBox
+                android:id="@+id/cb_neutered_detailadopt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/BaseTextBlack"
                 android:text="@string/neutered"/>
             <CheckBox
+                android:id="@+id/cb_friendly_detailadopt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/BaseTextBlack"
                 android:text="@string/friendly_with_kids"/>
 
             <Button
+                android:id="@+id/btn_upload_detailadopt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/container_top"

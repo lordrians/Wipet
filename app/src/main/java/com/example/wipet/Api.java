@@ -19,6 +19,7 @@ public class Api {
     public static final String BASE_PHOTO = BASE + "storage/photo";
     public static final String DIR_USER_PHOTO = BASE_PHOTO + "/user_photo/";
     public static final String DIR_DISCUSSION_PHOTO = BASE_PHOTO + "/diskusi/";
+    public static final String DIR_ADOPTION_PHOTO = BASE_PHOTO + "/adoption/";
 
     //discussion
     public static final String CREATE_DISCUSSION = HOME + "/diskusi/create" ;
@@ -30,4 +31,8 @@ public class Api {
     public static final String CREATE_COMMENT = HOME + "/comment/create" ;
     //Like
     public static final String CREATE_LIKE = HOME + "/like/create" ;
+
+    //adoption
+    public static final String CREATE_ADOTION = HOME + "/adoption/create";
+    public static final String SHOW_LIST_ADOPTION = HOME + "/adoption/show_list";
 }

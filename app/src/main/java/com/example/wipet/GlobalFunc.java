@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.text.format.DateFormat;
 import android.util.Base64;
+import android.util.DisplayMetrics;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
@@ -61,6 +62,24 @@ public class GlobalFunc {
 
     }
 
-    
+    public static String timeToString(String created_at) {
+        String dateString = null;
+        try {
+            Date date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSS'Z'").parse(created_at);
+            dateString = new SimpleDateFormat("dd/MM/yyyy HH:mm").format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return dateString;
+    }
+
+    public static int Utility(Context mContext) {
+
+        DisplayMetrics displayMetrics = mContext.getResources().getDisplayMetrics();
+        float screenWidthDp = displayMetrics.widthPixels / displayMetrics.density;
+        int noOfColumns = (int) (screenWidthDp / 180 + 0.5); // +0.5 for correct rounding to int.
+        return noOfColumns;
+
+    }
 
 }

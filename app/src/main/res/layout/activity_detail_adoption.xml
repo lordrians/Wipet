@@ -57,7 +57,7 @@
                         android:orientation="horizontal">
 
                         <ImageButton
-                            android:id="@+id/imageButton3"
+                            android:id="@+id/iv_back_detailadpot"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:background="@drawable/selector_list_item"
@@ -67,6 +67,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageButton
+                            android:id="@+id/iv_like_detailadpot"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:background="@drawable/selector_list_item"
@@ -99,6 +100,7 @@
                             android:orientation="horizontal">
 
                             <TextView
+                                android:id="@+id/tv_name_detailadpot"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/name_cat"
@@ -107,6 +109,7 @@
                                 android:includeFontPadding="false"
                                 style="@style/BaseTextBlackBold"/>
                             <ImageView
+                                android:id="@+id/iv_sex_detailadpot"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -115,6 +118,7 @@
 
                         </LinearLayout>
                         <TextView
+                            android:id="@+id/tv_price_detailadpot"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -140,6 +144,7 @@
                             style="@style/BaseTextGrey"/>
 
                         <TextView
+                            android:id="@+id/tv_username_detailadpot"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/ferrianrp"
@@ -160,6 +165,7 @@
                             android:src="@drawable/ic_location_accentdark"/>
 
                         <TextView
+                            android:id="@+id/tv_kota_detailadpot"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/depok"
@@ -176,6 +182,7 @@
                             android:textSize="@dimen/location_detailadopt"/>
 
                         <TextView
+                            android:id="@+id/tv_provinsi_detailadpot"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
@@ -207,6 +214,7 @@
                                 style="@style/BaseTextBlack"/>
 
                             <TextView
+                                android:id="@+id/tv_age_detailadpot"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/age_content_detailadopt"
@@ -232,6 +240,7 @@
                                 style="@style/BaseTextBlack"/>
 
                             <TextView
+                                android:id="@+id/tv_category_detailadpot"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/pets_category_detailadopt"
@@ -257,6 +266,7 @@
                                 style="@style/BaseTextBlack"/>
 
                             <TextView
+                                android:id="@+id/tv_reason_detailadpot"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/abandoned"
@@ -288,10 +298,11 @@
                             android:orientation="vertical">
 
                             <ImageButton
+                                android:id="@+id/iv_vaccinated_detailadopt"
                                 android:layout_width="@dimen/width_btn_detailadopt"
                                 android:layout_height="@dimen/height_btn_detailadopt"
                                 android:layout_gravity="center"
-                                android:background="@drawable/selector_btn_detailadopt"
+                                android:background="@drawable/bg_grey"
                                 android:src="@drawable/ic_vaccinated"/>
 
                             <TextView
@@ -313,10 +324,11 @@
                             android:orientation="vertical">
 
                             <ImageButton
+                                android:id="@+id/iv_friendly_detailadopt"
                                 android:layout_width="@dimen/width_btn_detailadopt"
                                 android:layout_height="@dimen/height_btn_detailadopt"
                                 android:layout_gravity="center"
-                                android:background="@drawable/selector_btn_detailadopt"
+                                android:background="@drawable/bg_accent"
                                 android:src="@drawable/ic_friendly"/>
 
                             <TextView
@@ -338,6 +350,7 @@
                             android:orientation="vertical">
 
                             <ImageButton
+                                android:id="@+id/iv_neutered_detailadopt"
                                 android:layout_width="@dimen/width_btn_detailadopt"
                                 android:layout_height="@dimen/height_btn_detailadopt"
                                 android:layout_gravity="center"
@@ -373,6 +386,7 @@
                         style="@style/BaseTextBlackBold"/>
 
                     <TextView
+                        android:id="@+id/tv_medicalnotes_detailadopt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/content_detailadopt"
@@ -388,6 +402,7 @@
                         style="@style/BaseTextBlackBold"/>
 
                     <TextView
+                        android:id="@+id/tv_desc_detailadopt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="@dimen/content_detailadopt"
@@ -402,6 +417,7 @@
                         android:orientation="horizontal">
 
                         <Button
+                            android:id="@+id/btn_apply_detailadopt"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -409,6 +425,7 @@
                             style="@style/ButtonBaseDark"/>
 
                         <ImageButton
+                            android:id="@+id/btn_chat_detailadopt"
                             android:layout_width="50dp"
                             android:layout_height="match_parent"
                             android:layout_marginStart="@dimen/container_start"

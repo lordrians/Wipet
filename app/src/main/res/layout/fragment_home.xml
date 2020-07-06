@@ -36,6 +36,7 @@
                     android:baselineAligned="false">
 
                     <LinearLayout
+                        android:id="@+id/ll_cat_homefrag"
                         android:gravity="center"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -58,6 +59,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ll_dog_homefrag"
                         android:gravity="center"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -80,6 +82,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ll_bird_homefrag"
                         android:gravity="center"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -111,6 +114,7 @@
                     android:baselineAligned="false">
 
                     <LinearLayout
+                        android:id="@+id/ll_sugarglider_homefrag"
                         android:gravity="center"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -133,6 +137,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/ll_snake_homefrag"
                         android:gravity="center"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -181,34 +186,42 @@
                 
             </LinearLayout>
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="@dimen/top_margin_title_feature"
                 android:orientation="horizontal">
 
                 <TextView
+                    style="@style/BaseTextBlackBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/discussion"
                     android:textSize="@dimen/title_feature"
-                    style="@style/BaseTextBlackBold"/>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/tv_viewall_homefragment"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/view_all"
-                    android:textSize="@dimen/hint_input"
-                    android:textColor="@color/hint_color"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/poppin"
                     android:layout_gravity="center_vertical"
-                    android:gravity="end"/>
+                    android:fontFamily="@font/poppin"
+                    android:gravity="end"
+                    android:text="@string/view_all"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/hint_input"
+                    android:textStyle="bold"
+                    android:background="@drawable/selector_list_item"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_item_dischorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"

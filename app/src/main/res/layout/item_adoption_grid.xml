@@ -8,6 +8,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_layout_listadoption"
         android:layout_width="170dp"
         android:layout_height="230dp"
         android:background="@drawable/selector_item_discus_horizontal"
@@ -15,7 +16,7 @@
         android:elevation="@dimen/elevation_item_horzdisc">
 
         <ImageView
-            android:id="@+id/iv_item_dishor"
+            android:id="@+id/iv_item_adoption"
             android:layout_width="match_parent"
             android:layout_height="@dimen/height_img_adopt_list"
             android:scaleType="centerCrop"
@@ -30,7 +31,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_item_dishor" >
+            app:layout_constraintTop_toBottomOf="@id/iv_item_adoption" >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -46,6 +47,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tv_name_item_adoption"
                         style="@style/BaseTextBlackBold"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
                         android:textSize="@dimen/title_discuss_horizontal_item"/>
 
                     <TextView
+                        android:id="@+id/tv_category_item_adoptoin"
                         style="@style/BaseTextGrey"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -66,7 +69,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/tv_price_item_adoption"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/horizontal_item_discuss_start"
@@ -104,6 +107,7 @@
                             android:src="@drawable/ic_location_black"/>
 
                         <TextView
+                            android:id="@+id/tv_kota_item_adoption"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/jakarta"

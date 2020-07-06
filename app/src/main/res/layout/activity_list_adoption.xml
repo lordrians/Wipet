@@ -9,7 +9,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/rl_btn_list_adoption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/selector_btn_dark_roundtop"
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toTopOf="@id/rl_btn_list_adoption"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -66,7 +66,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/toolbar_list_adoption"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_toolbar"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +81,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/imageButton4"
+                        android:id="@+id/iv_back_list_adoptoin"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:background="@drawable/selector_list_item"
@@ -99,14 +99,14 @@
                         android:textSize="@dimen/txt_title_toolbar"
                         android:layout_marginStart="@dimen/container_start"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+                        app:layout_constraintStart_toEndOf="@id/iv_back_list_adoptoin"
                         app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.appcompat.widget.Toolbar>
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/linearLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
@@ -117,38 +117,42 @@
                 android:layout_marginEnd="@dimen/container_end"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+                app:layout_constraintTop_toBottomOf="@id/toolbar_list_adoption">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
-                    android:layout_weight="5"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/container_end"
                     app:hintEnabled="false"
-                    android:layout_marginEnd="6dp">
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_search_list_adoption"
+                        style="@style/BaseTextBlack"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/selector_input_search"
                         android:drawableStart="@drawable/ic_search_black"
-                        android:text="@string/find_pets_you_want"
-                        style="@style/BaseTextBlack"
-                        android:drawablePadding="@dimen/pad_search"/>
+                        android:drawablePadding="@dimen/pad_search"
+                        android:hint="@string/find_pets_you_want" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <LinearLayout
-                    android:layout_width="0dp"
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/selector_input_search"
-                        android:src="@drawable/ic_filter_black"/>
-                </LinearLayout>
+                    android:background="@drawable/selector_input_search"
+                    android:src="@drawable/ic_filter_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -164,6 +168,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_adoption"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"

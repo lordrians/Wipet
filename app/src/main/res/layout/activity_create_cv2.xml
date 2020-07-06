@@ -97,6 +97,7 @@
                     app:hintEnabled="false">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_q1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/tlp_ferrian"
@@ -114,19 +115,19 @@
                     android:layout_marginTop="@dimen/container_top"
                     android:text="@string/alamat_lengkap" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:hintEnabled="false">
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:hintEnabled="false">-->
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        style="@style/TextAppearance.TextInputLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/alamat_lengkap_content"
-                        android:inputType="textMultiLine"
-                        android:maxLines="5"/>
-                </com.google.android.material.textfield.TextInputLayout>
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        style="@style/TextAppearance.TextInputLayout"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:hint="@string/alamat_lengkap_content"-->
+<!--                        android:inputType="textMultiLine"-->
+<!--                        android:maxLines="5"/>-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
 
                 <TextView
                     style="@style/BaseTextGrey"

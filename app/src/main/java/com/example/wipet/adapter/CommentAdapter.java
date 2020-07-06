@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.wipet.Api;
+import com.example.wipet.GlobalFunc;
 import com.example.wipet.R;
 import com.example.wipet.object.Comment;
 
@@ -42,7 +43,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
 
         holder.tvUsername.setText(comment.getUser().getUsername());
         holder.tvComment.setText(comment.getComment());
-        holder.tvDate.setText(comment.getCreated_at());
+        holder.tvDate.setText(GlobalFunc.timeToString(comment.getCreated_at()));
 
         if (comment.getUser().getPhoto() != null){
             Glide.with(mContext)

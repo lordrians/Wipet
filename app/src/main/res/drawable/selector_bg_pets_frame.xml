@@ -2,6 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
+            <solid android:color="@color/background_soft_grey"/>
             <stroke
                 android:width="@dimen/stroke_pets_frame"
                 android:color="@color/colorPrimary"/>
@@ -17,6 +18,7 @@
 
     <item android:state_pressed="false">
         <shape android:shape="rectangle">
+            <solid android:color="@color/white"/>
             <stroke
                 android:width="@dimen/stroke_pets_frame"
                 android:color="@color/colorPrimary"/>

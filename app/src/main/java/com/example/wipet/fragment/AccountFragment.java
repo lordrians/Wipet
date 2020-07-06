@@ -78,7 +78,7 @@ public class AccountFragment extends Fragment {
             try {
                 JSONObject object = new JSONObject(response);
                 if (object.getBoolean("success")){
-                    if (!object.getString("cv_adoption").isEmpty()){
+                    if (object.getBoolean("cv_adoption")){
                         ivNotifCv.setImageResource(R.drawable.ic_ceklis);
                         tvWarningCv.setText(R.string.cv_created);
 

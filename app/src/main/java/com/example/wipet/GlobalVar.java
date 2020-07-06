@@ -28,6 +28,11 @@ public class GlobalVar {
     public static final Integer MULTIPLE_IMAGE_CODE = 12;
     public static final Integer BITMAP_FORMAT = 1;
     public static final Integer STRING_FORMAT = 2;
+    public static final String FROM_CREATE_DISCUSSION = "FROM_CREATE_DISCUSSION";
+
+    //Pets Category
+    public static final String CAT = "CAT";
+    public static final String DOG = "DOG";
 
 
 

@@ -117,7 +117,10 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
                 break;
 
             case R.id.tv_btn_publish_createdisc:
-
+//                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+//                intent.putExtra(GlobalVar.FROM_CREATE_DISCUSSION,true);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                startActivity(intent);
                 publish();
 
                 break;
@@ -133,6 +136,12 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
                 JSONObject object = new JSONObject(response);
                 if (object.getBoolean("success")) {
                     Toast.makeText(getApplicationContext(), "Sukses", Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    intent.putExtra(GlobalVar.FROM_CREATE_DISCUSSION,true);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                    finish();
 
                     dialog.dismiss();
                 }
@@ -158,6 +167,7 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
                 //ngirim arraylist
                 String data = new Gson().toJson(stringPhotoArrList);
                 map.put("title", etTitle.getText().toString().trim());
+                map.put("content", etContent.getText().toString().trim());
                 map.put("photo", data);
                 return map;
             }

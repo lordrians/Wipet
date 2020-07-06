@@ -22,7 +22,7 @@
     <dimen name="margin_end_pets_frame">10dp</dimen>
     <dimen name="top_margin_pets_frame">16dp</dimen>
     <dimen name="top_margin_title_feature">32dp</dimen>
-    <dimen name="width_item_discuss_horizontal">190dp</dimen>
+    <dimen name="width_item_discuss_horizontal">200dp</dimen>
     <dimen name="height_item_discuss_horizontal">200dp</dimen>
     <dimen name="height_img_item_discussion_horizontal">100dp</dimen>
     <dimen name="title_discuss_horizontal_item">16sp</dimen>

@@ -165,10 +165,9 @@ public class DetailDiscussionActivity extends AppCompatActivity {
 
                     commentArrayList.add(comment);
                     rvComment.getAdapter().notifyDataSetChanged();
-
+                    svLayout.fullScroll(ScrollView.FOCUS_DOWN);
                     rvComment.scrollToPosition(commentArrayList.size()-1);
                     etComment.setText("");
-                    svLayout.fullScroll(ScrollView.FOCUS_DOWN);
                     Toast.makeText(getApplicationContext(), "Comment success", Toast.LENGTH_SHORT).show();
                     dialog.dismiss();
                 }
@@ -209,11 +208,14 @@ public class DetailDiscussionActivity extends AppCompatActivity {
                 JSONObject object = new JSONObject(response);
                 if (object.getBoolean("success")){
 
-                    Toast.makeText(getApplicationContext(),"C",Toast.LENGTH_SHORT).show();
+                    if (object.getBoolean("liked")){
+                        ivLike.setImageResource(R.drawable.ic_favorite);
+                    }
+
                     JSONObject discussion = object.getJSONObject("discussion");
                     tvTitle.setText(discussion.getString("title"));
                     tvContent.setText(discussion.getString("content"));
-                    tvDate.setText(discussion.getString("created_at"));
+                    tvDate.setText(GlobalFunc.timeToString(discussion.getString("created_at")));
                     tvTitle.setText(discussion.getString("title"));
 
                     JSONObject user = discussion.getJSONObject("user");

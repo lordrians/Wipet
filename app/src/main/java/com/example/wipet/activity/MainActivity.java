@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
@@ -44,7 +45,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private void init() {
         botNav = findViewById(R.id.botnav_view_main);
-
+        boolean createDisc = getIntent().getBooleanExtra(GlobalVar.FROM_CREATE_DISCUSSION,false);
+        Toast.makeText(this, String.valueOf(createDisc), Toast.LENGTH_SHORT).show();
+        if (createDisc){
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fl_main_activity, new DiscussionListFragment())
+                    .commit();
+        }
 
         botNav.setOnNavigationItemSelectedListener(this);
     }

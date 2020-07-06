@@ -59,7 +59,7 @@
     <string name="age">13</string>
     <string name="choose_size">Choose Size</string>
     <string name="medium">Medium</string>
-    <string name="animal_sex">Animal_Sex</string>
+    <string name="animal_sex">Animal Sex</string>
     <string name="background_story">Background Story</string>
     <string name="description">Description</string>
     <string name="medical_notes">Medical Notes</string>
@@ -150,10 +150,15 @@
     <string name="email_content">Your email</string>
     <string name="phone_content">Your phone number</string>
     <string name="date_" />
+    <string name="price">Price</string>
 
     <string-array name="pets_category">
-        <item>Dog</item>
         <item>Cat</item>
+        <item>Dog</item>
+    </string-array>
+    <string-array name="cat_type">
+        <item>Maincone</item>
+        <item>Anggora</item>
     </string-array>
 
     <string-array name="category_discussion">
@@ -165,6 +170,11 @@
         <item>Small</item>
         <item>Medium</item>
         <item>Large</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>Male</item>
+        <item>Female</item>
     </string-array>
 
     <string-array name="background_story_pet">

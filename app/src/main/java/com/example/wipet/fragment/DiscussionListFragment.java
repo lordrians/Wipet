@@ -106,7 +106,7 @@ public class DiscussionListFragment extends Fragment {
                         JSONObject kotaObj = kecamatanObj.getJSONObject("kota");
                         JSONObject provinsiObj = kotaObj.getJSONObject("provinsi");
                         User user = new User();
-                        user.setName(userObj.getString("name"));
+                        user.setUsername(userObj.getString("username"));
                         user.setKelurahan(kelurahanObj.getString("name"));
                         user.setKecamatan(kecamatanObj.getString("name"));
                         user.setKota(kotaObj.getString("name"));
