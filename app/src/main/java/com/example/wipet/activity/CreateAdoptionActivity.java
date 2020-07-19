@@ -122,6 +122,11 @@ public class CreateAdoptionActivity extends AppCompatActivity {
                 if (object.getBoolean("success")){
                     Toast.makeText(getApplicationContext(),"Success",Toast.LENGTH_SHORT).show();
                     dialog.dismiss();
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+
+                    finish();
                 }
 
             } catch (JSONException e) {
