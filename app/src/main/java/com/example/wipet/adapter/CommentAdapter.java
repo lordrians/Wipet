@@ -43,7 +43,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
 
         holder.tvUsername.setText(comment.getUser().getUsername());
         holder.tvComment.setText(comment.getComment());
-        holder.tvDate.setText(GlobalFunc.timeToString(comment.getCreated_at()));
+        holder.tvDate.setText(GlobalFunc.convertTime(comment.getCreated_at()));
 
         if (comment.getUser().getPhoto() != null){
             Glide.with(mContext)

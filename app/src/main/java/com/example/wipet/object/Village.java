@@ -1,14 +1,15 @@
 package com.example.wipet.object;
 
 public class Village {
-    private int id, id_kecamatan;
+    private int  id_kecamatan;
+    private  long id;
     private String name;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

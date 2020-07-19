@@ -22,7 +22,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
             <TextView
                 android:id="@+id/textView"
@@ -51,6 +52,8 @@
                 app:tabSelectedTextColor="@android:color/black" />
 
             <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="@dimen/container_discussion_vertical_start"
+                android:layout_marginEnd="@dimen/container_discussion_vertical_end"
                 android:id="@+id/rv_item_discvertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

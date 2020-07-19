@@ -6,7 +6,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="24dp"
         android:layout_width="@dimen/width_item_discuss_horizontal"
         android:layout_height="@dimen/height_item_discuss_horizontal"
         android:background="@drawable/selector_item_discus_horizontal"
@@ -14,116 +15,121 @@
         android:id="@+id/item_layout_dischorizontal"
         android:elevation="@dimen/elevation_item_horzdisc">
 
-        <ImageView
-            android:id="@+id/iv_photo_item_dishor"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/height_img_item_discussion_horizontal"
-            android:scaleType="centerCrop"
-            android:src="@drawable/img_cats"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_photo_item_dishor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_img_item_discussion_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@color/background_soft_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_item_title_dishor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/horizontal_item_discuss_start"
-            android:layout_marginEnd="@dimen/horizontal_item_discuss_end"
-            android:maxLines="2"
-            android:text="@string/title_discus_horizontal_item"
-            android:textColor="@color/black"
-            android:textSize="@dimen/title_discuss_horizontal_item"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_photo_item_dishor" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:orientation="vertical"
-            android:paddingBottom="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/tv_item_title_dishor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/horizontal_item_discuss_start"
                 android:layout_marginEnd="@dimen/horizontal_item_discuss_end"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tv_username_item_dishor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/username"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/txt_item_hordiscus" />
-
-                <TextView
-                    android:id="@+id/tv_date_item_dishor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:text="@string/a_day_ago"
-                    android:textColor="@color/hint_color"
-                    android:textSize="@dimen/txt_item_hordiscus" />
-
-
-            </LinearLayout>
+                android:maxLines="2"
+                android:text="@string/title_discus_horizontal_item"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_discuss_horizontal_item"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_photo_item_dishor" />
 
             <LinearLayout
+                android:id="@+id/linearLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/horizontal_item_discuss_start"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="@dimen/horizontal_item_discuss_end"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
-                <ImageView
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_favorite" />
-
-                <TextView
-                    android:id="@+id/tv_like_item_dishor"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="2dp"
-                    android:text="@string/count_like"
-                    android:textColor="@color/subtext_horzdiscus_item"
-                    android:textSize="@dimen/txt_item_hordiscus" />
+                    android:layout_marginStart="@dimen/horizontal_item_discuss_start"
+                    android:layout_marginEnd="@dimen/horizontal_item_discuss_end"
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="6dp"
-                    android:src="@drawable/ic_comment" />
+                    <TextView
+                        android:id="@+id/tv_username_item_dishor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_item_hordiscus" />
 
-                <TextView
-                    android:id="@+id/tv_comment_item_dishor"
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/tv_date_item_dishor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/a_day_ago"
+                        android:textColor="@color/hint_color"
+                        android:textSize="@dimen/txt_item_hordiscus" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="2dp"
-                    android:text="@string/count_like"
-                    android:textColor="@color/subtext_horzdiscus_item"
-                    android:textSize="@dimen/txt_item_hordiscus" />
+                    android:layout_marginStart="@dimen/horizontal_item_discuss_start"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="@dimen/horizontal_item_discuss_end"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_favorite" />
+
+                    <TextView
+                        android:id="@+id/tv_like_item_dishor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="@string/count_like"
+                        android:textColor="@color/subtext_horzdiscus_item"
+                        android:textSize="@dimen/txt_item_hordiscus" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:src="@drawable/ic_comment" />
+
+                    <TextView
+                        android:id="@+id/tv_comment_item_dishor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="@string/count_like"
+                        android:textColor="@color/subtext_horzdiscus_item"
+                        android:textSize="@dimen/txt_item_hordiscus" />
+
+
+                </LinearLayout>
 
             </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 </LinearLayout>

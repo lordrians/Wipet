@@ -6,267 +6,271 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activity.DetailDiscussionActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:hintEnabled="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_comment_detaildisc"
-                style="@style/BaseTextBlack"
-                android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:background="@drawable/bg_reply_comment"
-                android:hint="@string/reply"
-                android:textColorHint="@color/hint_color"
-                android:textSize="@dimen/reply_comment"
-                android:maxLines="5"
-                android:inputType="textCapSentences|textMultiLine"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/iv_sendcomment_detaildisc"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/iv_sendcomment_detaildisc"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/margin_start_send_reply"
-                android:background="@drawable/selector_list_item"
-                android:src="@drawable/ic_send_reply"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/et_comment_detaildisc"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <ScrollView
         android:id="@+id/sv_detaildisc"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_detaildisc"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/height_toolbar"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_detaildisc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/container_start"
+                    android:layout_marginEnd="@dimen/container_end"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/iv_back_detaildisc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:background="@drawable/selector_list_item"
+                        android:src="@drawable/ic_back_arrow"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/iv_like_detaildisc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/selector_list_item"
+                        android:src="@drawable/ic_favorite_black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:background="@drawable/selector_list_item"
+                        android:src="@drawable/ic_share"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/container_start"
                 android:layout_marginEnd="@dimen/container_end"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/iv_back_detaildisc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:background="@drawable/selector_list_item"
-                    android:src="@drawable/ic_back_arrow"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageButton
-                    android:id="@+id/iv_like_detaildisc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/selector_list_item"
-                    android:src="@drawable/ic_favorite_black"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageButton"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:background="@drawable/selector_list_item"
-                    android:src="@drawable/ic_share"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.appcompat.widget.Toolbar>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginStart="@dimen/container_start"
-            android:layout_marginEnd="@dimen/container_end"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_detaildisc">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_container_user_detaildiscus"
-                android:orientation="horizontal">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/iv_userphoto_detaildisc"
-                    android:layout_width="@dimen/width_img_photo_account_detaildisc"
-                    android:layout_height="match_parent"
-                    android:src="@color/grey"/>
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_detaildisc">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="@dimen/horizontal_item_discuss_start"
-                    android:orientation="vertical">
+                    android:layout_height="@dimen/height_container_user_detaildiscus"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_userphoto_detaildisc"
+                        android:layout_width="@dimen/width_img_photo_account_detaildisc"
+                        android:layout_height="match_parent"
+                        android:src="@color/grey" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/horizontal_item_discuss_start"
+                        android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/tv_username_detaildisc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/username"
-                            android:textSize="@dimen/item_userowndiscus_detaildiscus"
-                            android:gravity="center_vertical"
-                            style="@style/BaseTextBlack"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/comma"
-                            android:textSize="@dimen/item_userowndiscus_detaildiscus"
-                            android:gravity="center_vertical"
-                            style="@style/BaseTextBlack"/>
+                            <TextView
+                                android:id="@+id/tv_username_detaildisc"
+                                style="@style/BaseTextBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:text="@string/username"
+                                android:textSize="@dimen/item_userowndiscus_detaildiscus" />
 
-                        <TextView
-                            android:id="@+id/tv_kota_detaildisc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/city"
-                            android:textSize="@dimen/item_userowndiscus_detaildiscus"
-                            android:gravity="center_vertical"
-                            android:layout_marginStart="6dp"
-                            style="@style/BaseTextGrey"/>
+                            <TextView
+                                style="@style/BaseTextBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/comma"
+                                android:textSize="@dimen/item_userowndiscus_detaildiscus" />
+
+                            <TextView
+                                android:id="@+id/tv_kota_detaildisc"
+                                style="@style/BaseTextGrey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="6dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/city"
+                                android:textSize="@dimen/item_userowndiscus_detaildiscus" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_create_at_detaildisc"
+                                style="@style/BaseTextGrey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/date_"
+                                android:textSize="@dimen/item_userowndiscus_detaildiscus" />
+
+                            <TextView
+                                style="@style/BaseTextGrey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="6dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/divider_line"
+                                android:textSize="@dimen/item_userowndiscus_detaildiscus" />
+
+                            <!--                        <TextView-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="match_parent"-->
+                            <!--                            android:text="@string/time"-->
+                            <!--                            android:textSize="@dimen/item_userowndiscus_detaildiscus"-->
+                            <!--                            android:gravity="center_vertical"-->
+                            <!--                            android:layout_marginStart="6dp"-->
+                            <!--                            style="@style/BaseTextGrey"/>-->
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/tv_create_at_detaildisc"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/date_"
-                            android:textSize="@dimen/item_userowndiscus_detaildiscus"
-                            android:gravity="center_vertical"
-                            style="@style/BaseTextGrey"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/divider_line"
-                            android:textSize="@dimen/item_userowndiscus_detaildiscus"
-                            android:gravity="center_vertical"
-                            android:layout_marginStart="6dp"
-                            style="@style/BaseTextGrey"/>
-
-<!--                        <TextView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:text="@string/time"-->
-<!--                            android:textSize="@dimen/item_userowndiscus_detaildiscus"-->
-<!--                            android:gravity="center_vertical"-->
-<!--                            android:layout_marginStart="6dp"-->
-<!--                            style="@style/BaseTextGrey"/>-->
-
-                    </LinearLayout>
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_title_detaildisc"
+                    style="@style/BaseTextBlackBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_discus_horizontal_item"
+                    android:textSize="@dimen/title_detail_discus" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_img_detaildiscus"
+                    app:cardCornerRadius="24dp">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/vp_photo_detaildisc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_content_detaildisc"
+                    style="@style/BaseTextBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/container_start"
+                    android:textSize="@dimen/txt_detail_discus"
+                    tools:text="@tools:sample/full_names" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_top_comment"
+                    android:background="@color/hint_color" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_comment_detaildisc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_comment" />
 
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_title_detaildisc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/title_discus_horizontal_item"
-                android:textSize="@dimen/title_detail_discus"
-                style="@style/BaseTextBlackBold"/>
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/vp_photo_detaildisc"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_img_detaildiscus"/>
-
-            <TextView
-                android:id="@+id/tv_content_detaildisc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:text="@tools:sample/full_names"
-                android:textSize="@dimen/txt_detail_discus"
-                style="@style/BaseTextBlack"/>
-
-            <View
-                android:layout_marginTop="@dimen/margin_top_comment"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/hint_color"/>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_comment_detaildisc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:listitem="@layout/item_comment"/>
-
-
-        </LinearLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </ScrollView>
 
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_comment_detaildisc"
+            style="@style/BaseTextBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_reply_comment"
+            android:hint="@string/reply"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="5"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/reply_comment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_sendcomment_detaildisc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/iv_sendcomment_detaildisc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_start_send_reply"
+            android:background="@drawable/selector_list_item"
+            android:src="@drawable/ic_send_reply"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_comment_detaildisc"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

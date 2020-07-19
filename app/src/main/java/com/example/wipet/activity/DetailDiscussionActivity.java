@@ -42,6 +42,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -83,7 +84,13 @@ public class DetailDiscussionActivity extends AppCompatActivity {
         svLayout = findViewById(R.id.sv_detaildisc);
 
         rvComment.setHasFixedSize(true);
-        rvComment.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager commentManager = new LinearLayoutManager(this){
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        };
+        rvComment.setLayoutManager(commentManager);
 
         Discussion paketDiscussion = getIntent().getParcelableExtra("discussion");
         idDiscussion = paketDiscussion.getId();
@@ -164,11 +171,19 @@ public class DetailDiscussionActivity extends AppCompatActivity {
                     comment.setUser(user);
 
                     commentArrayList.add(comment);
+//                    if (rvComment.getAdapter() != null){
+//                        rvComment.getAdapter().notifyDataSetChanged();
+//                        Toast.makeText(getApplicationContext(),"SSS", Toast.LENGTH_LONG).show();
+//                    } else {
+//                        CommentAdapter commentAdapter = new CommentAdapter(this,commentArrayList);
+//                        rvComment.setAdapter(commentAdapter);
+//                        rvComment.getAdapter().notifyDataSetChanged();
+//                        Toast.makeText(getApplicationContext(),"11", Toast.LENGTH_LONG).show();
+//                    }
                     rvComment.getAdapter().notifyDataSetChanged();
+
                     svLayout.fullScroll(ScrollView.FOCUS_DOWN);
-                    rvComment.scrollToPosition(commentArrayList.size()-1);
                     etComment.setText("");
-                    Toast.makeText(getApplicationContext(), "Comment success", Toast.LENGTH_SHORT).show();
                     dialog.dismiss();
                 }
 
@@ -261,6 +276,7 @@ public class DetailDiscussionActivity extends AppCompatActivity {
                         }
                         CommentAdapter commentAdapter = new CommentAdapter(getApplicationContext(),commentArrayList);
                         rvComment.setAdapter(commentAdapter);
+                        Toast.makeText(getApplicationContext(), "diisi", Toast.LENGTH_SHORT).show();
 
                     }
 

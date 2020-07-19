@@ -36,7 +36,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/height_img_detailadopt"
-                        android:src="@drawable/img_cat2"
+                        android:src="@color/background_soft_grey"
                         android:scaleType="centerCrop"/>
 
                 </LinearLayout>

@@ -1,103 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/container_discussion_vertical_start"
-    android:layout_marginEnd="@dimen/container_discussion_vertical_end"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/item_layout_discvertical"
     android:elevation="5dp"
     android:orientation="vertical">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="24dp"
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/iv_photo_item_discvertical"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_weight="2"
+                android:layout_height="match_parent"
                 android:src="@drawable/img_cats"
-                android:scaleType="fitXY"/>
+                android:scaleType="centerCrop"/>
 
-            <TextView
-                android:id="@+id/tv_title_item_discvertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/why_cats_always"
-                android:textSize="@dimen/title_discuss_vertical_item"
-                android:maxLines="2"
-                style="@style/BaseTextBlackBold"
-                tools:ignore="NestedWeights" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tv_username_item_discvertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/username"
-                        android:textSize="@dimen/username_discuss_vertical_item"
-                        style="@style/BaseTextBlack"/>
-
-                    <TextView
-                        android:id="@+id/tv_date_item_discvertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:text="@string/a_day_ago"
-                        android:textSize="@dimen/date_discuss_vertical_item"
-                        android:textColor="@color/hint_color"/>
+        </androidx.cardview.widget.CardView>
 
 
-                </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:orientation="horizontal">
+            <include
+                layout="@layout/txt_item_discussion_list"/>
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/ic_favorite" />
-
-                    <TextView
-                        android:id="@+id/tv_like_item_discvertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="2dp"
-                        android:text="@string/count_like"
-                        android:textColor="@color/subtext_horzdiscus_item"
-                        android:textSize="@dimen/like_discuss_vertical_item" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="6dp"
-                        android:src="@drawable/ic_comment" />
-
-                    <TextView
-                        android:id="@+id/tv_comment_item_discvertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="2dp"
-                        android:text="@string/count_like"
-                        android:textColor="@color/subtext_horzdiscus_item"
-                        android:textSize="@dimen/comment_discuss_vertical_item"/>
+        </RelativeLayout>
 
 
-                </LinearLayout>
-            </LinearLayout>
+    </LinearLayout>
+
 
 
 

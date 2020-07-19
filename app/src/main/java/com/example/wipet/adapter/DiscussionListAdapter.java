@@ -45,7 +45,7 @@ public class DiscussionListAdapter extends RecyclerView.Adapter<DiscussionListAd
 
         holder.tvTitle.setText(discussion.getTitle());
         holder.tvUsername.setText(discussion.getUser().getUsername());
-        holder.tvDate.setText(GlobalFunc.timeToString(discussion.getCreated_at()));
+        holder.tvDate.setText(GlobalFunc.convertTime(discussion.getCreated_at()));
         holder.tvLike.setText(String.valueOf(discussion.getLikesCount()));
         holder.tvComment.setText(String.valueOf(discussion.getCommentsCount()));
         if (discussion.getPhoto() != null){

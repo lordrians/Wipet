@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -78,7 +79,7 @@ public class DiscussionHorizontalAdapter extends RecyclerView.Adapter<Discussion
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView ivPhoto;
         private TextView tvTitle, tvUsername, tvDate, tvLike, tvComment;
-        private ConstraintLayout itemLayout;
+        private CardView itemLayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivPhoto = itemView.findViewById(R.id.iv_photo_item_dishor);

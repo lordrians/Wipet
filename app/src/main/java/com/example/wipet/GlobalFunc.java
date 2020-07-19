@@ -1,10 +1,12 @@
 package com.example.wipet;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.text.format.DateFormat;
+import android.text.format.DateUtils;
 import android.util.Base64;
 import android.util.DisplayMetrics;
 import android.widget.Toast;
@@ -62,10 +64,12 @@ public class GlobalFunc {
 
     }
 
+    @SuppressLint("SimpleDateFormat")
     public static String timeToString(String created_at) {
         String dateString = null;
         try {
             Date date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSS'Z'").parse(created_at);
+            long mili = date.getTime();
             dateString = new SimpleDateFormat("dd/MM/yyyy HH:mm").format(date);
         } catch (ParseException e) {
             e.printStackTrace();
@@ -80,6 +84,25 @@ public class GlobalFunc {
         int noOfColumns = (int) (screenWidthDp / 180 + 0.5); // +0.5 for correct rounding to int.
         return noOfColumns;
 
+    }
+
+    @SuppressLint("SimpleDateFormat")
+    public static String convertTime(String created_at)  {
+        String ago = null;
+        try {
+
+            String dateString = null;
+            Date date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSSS'Z'").parse(created_at);
+            long mili = date.getTime();
+            Long now = System.currentTimeMillis();
+            ago = DateUtils.getRelativeTimeSpanString(mili, now, DateUtils.MINUTE_IN_MILLIS).toString();
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+        return ago;
     }
 
 }

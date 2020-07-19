@@ -61,7 +61,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class EditAccountActivity extends AppCompatActivity implements TextWatcher {
     private Spinner spinProvince,spinCities, spinDistrict, spinVillage;
-    private int idKelurahan, idUser;
+    private long idKelurahan, idUser;
     private ProgressDialog dialog;
     private SharedPreferences userInfo;
     private Bitmap bitPhoto = null;
@@ -140,7 +140,7 @@ public class EditAccountActivity extends AppCompatActivity implements TextWatche
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 idKelurahan = villageArrayList.get(position).getId();
-                Toast.makeText(getApplicationContext(),villageArrayList.get(position).getName() + villageArrayList.get(position).getId(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),villageArrayList.get(position).getName() + String.valueOf(villageArrayList.get(position).getId()),Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -335,18 +335,16 @@ public class EditAccountActivity extends AppCompatActivity implements TextWatche
                 if (object.getBoolean("success")){
 
                     JSONArray dataArray = object.getJSONArray("kelurahan");
-                    StringBuilder sb = new StringBuilder();
+//                    StringBuilder sb = new StringBuilder();
                     for (int i=0; i<dataArray.length(); i++){
                         Village village = new Village();
                         JSONObject dataObj = dataArray.getJSONObject(i);
 
                         village.setName(dataObj.getString("name"));
-                        village.setId(dataObj.getInt("id"));
-                        sb.append(String.valueOf(dataObj.getInt("id")));
+                        village.setId(dataObj.getLong("id"));
                         villageArrayList.add(village);
                     }
 
-//                    GlobalFunc.showToast(sb.toString(),this, GlobalVar.TIME_SHORT_TOAST);
 
                     for (int i = 0; i < villageArrayList.size(); i++){
                         namesVillage.add(villageArrayList.get(i).getName().toString());
