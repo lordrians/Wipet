@@ -21,14 +21,13 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.wipet.Api;
 import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
 import com.example.wipet.R;
-import com.example.wipet.adapter.PhotoDiscussionAdapter;
+import com.example.wipet.adapter.PhotoAdapter;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 
@@ -228,7 +227,7 @@ public class CreateAdoptionActivity extends AppCompatActivity {
         for (int i = 0; i < bitmapArrayList.size(); i++){
             stringPhotoArrList.add(GlobalFunc.bitmapToString(bitmapArrayList.get(i)));
         }
-        PhotoDiscussionAdapter adapter = new PhotoDiscussionAdapter(this, stringPhotoArrList,GlobalVar.BITMAP_FORMAT);
+        PhotoAdapter adapter = new PhotoAdapter(this, stringPhotoArrList,GlobalVar.BITMAP_FORMAT,"");
         vpPhoto.setAdapter(adapter);
     }
 }

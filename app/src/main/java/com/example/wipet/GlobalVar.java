@@ -22,8 +22,13 @@ public class GlobalVar {
     public static final String VAR_NAMA_PROVINSI = "VAR_NAMA_PROVINSI";
 
 
+    public static final String DETAIL_DISCUSSION = "DETAIL_DISCUSSION";
+    public static final String DETAIL_ADOPTION = "DETAIL_ADOPTION";
+
+
     public static final String TIME_LONG_TOAST = "LONG";
     public static final String TIME_SHORT_TOAST = "SHORT";
+
     //code status
     public static final Integer MULTIPLE_IMAGE_CODE = 12;
     public static final Integer BITMAP_FORMAT = 1;

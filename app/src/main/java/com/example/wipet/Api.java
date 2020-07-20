@@ -35,4 +35,5 @@ public class Api {
     //adoption
     public static final String CREATE_ADOTION = HOME + "/adoption/create";
     public static final String SHOW_LIST_ADOPTION = HOME + "/adoption/show_list";
+    public static final String SHOW_ITEM_ADOPTION = HOME + "/adoption/show_item";
 }

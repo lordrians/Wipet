@@ -25,21 +25,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/toolbar">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/toolbar">-->
 
-                    <ImageView
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/vp_photo_detailadopt"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/height_img_detailadopt"
-                        android:src="@color/background_soft_grey"
-                        android:scaleType="centerCrop"/>
+                        android:background="@color/background_soft_grey"/>
 
-                </LinearLayout>
+
+<!--                </LinearLayout>-->
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
@@ -109,7 +110,7 @@
                                 android:includeFontPadding="false"
                                 style="@style/BaseTextBlackBold"/>
                             <ImageView
-                                android:id="@+id/iv_sex_detailadpot"
+                                android:id="@+id/iv_gender_detailadpot"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -328,7 +329,7 @@
                                 android:layout_width="@dimen/width_btn_detailadopt"
                                 android:layout_height="@dimen/height_btn_detailadopt"
                                 android:layout_gravity="center"
-                                android:background="@drawable/bg_accent"
+                                android:background="@drawable/bg_grey"
                                 android:src="@drawable/ic_friendly"/>
 
                             <TextView

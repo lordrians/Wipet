@@ -15,19 +15,22 @@ import com.example.wipet.Api;
 import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
 import com.example.wipet.R;
+import com.example.wipet.activity.ListAdoptionActivity;
 
 import java.util.ArrayList;
 
-public class PhotoDiscussionAdapter extends RecyclerView.Adapter<PhotoDiscussionAdapter.ViewHolder> {
+public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> {
     private ArrayList<String> arrayListPhoto;
     private Context mContext;
     private int format;
+    private String activity;
     private View parent;
 
-    public PhotoDiscussionAdapter(Context mContext, ArrayList<String> arrayListPhoto, int format){
+    public PhotoAdapter(Context mContext, ArrayList<String> arrayListPhoto, int format,String activity){
         this.mContext = mContext;
         this.arrayListPhoto = arrayListPhoto;
         this.format = format;
+        this.activity = activity;
     }
 
 
@@ -42,9 +45,16 @@ public class PhotoDiscussionAdapter extends RecyclerView.Adapter<PhotoDiscussion
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         if (format == GlobalVar.STRING_FORMAT){
-            Glide.with(mContext)
-                    .load(Api.DIR_DISCUSSION_PHOTO + arrayListPhoto.get(position))
-                    .into(holder.ivPhoto);
+            if (activity.equals(GlobalVar.DETAIL_DISCUSSION)){
+                Glide.with(mContext)
+                        .load(Api.DIR_DISCUSSION_PHOTO + arrayListPhoto.get(position))
+                        .into(holder.ivPhoto);
+            } else if (activity.equals(GlobalVar.DETAIL_ADOPTION)) {
+                Glide.with(mContext)
+                        .load(Api.DIR_ADOPTION_PHOTO + arrayListPhoto.get(position))
+                        .into(holder.ivPhoto);
+            }
+
         } else {
             ArrayList<Bitmap> bitmapArrayList = new ArrayList<>();
             for (int i = 0; i < arrayListPhoto.size(); i++){

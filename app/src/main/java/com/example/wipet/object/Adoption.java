@@ -6,15 +6,53 @@ import android.os.Parcelable;
 import java.util.ArrayList;
 
 public class Adoption implements Parcelable {
-    private int id, size, age, price;
+    private int id, size, age;
+    private long price;
     private String title, gender, background_story,category,pets_category, desc, medical_notes, kelurahan,kota,kecamatan, provinsi;
     private String created_at, status;
-    private boolean vaccinated, neutered,friendly;
+    private int vaccinated, neutered,friendly;
     private User user;
     private ArrayList<String> photo;
 
     public Adoption() {
     }
+
+    protected Adoption(Parcel in) {
+        id = in.readInt();
+        size = in.readInt();
+        age = in.readInt();
+        price = in.readLong();
+        title = in.readString();
+        gender = in.readString();
+        background_story = in.readString();
+        category = in.readString();
+        pets_category = in.readString();
+        desc = in.readString();
+        medical_notes = in.readString();
+        kelurahan = in.readString();
+        kota = in.readString();
+        kecamatan = in.readString();
+        provinsi = in.readString();
+        created_at = in.readString();
+        status = in.readString();
+        vaccinated = in.readInt();
+        neutered = in.readInt();
+        friendly = in.readInt();
+        user = in.readParcelable(User.class.getClassLoader());
+        photo = in.createStringArrayList();
+    }
+
+    public static final Creator<Adoption> CREATOR = new Creator<Adoption>() {
+        @Override
+        public Adoption createFromParcel(Parcel in) {
+            return new Adoption(in);
+        }
+
+        @Override
+        public Adoption[] newArray(int size) {
+            return new Adoption[size];
+        }
+    };
 
     public String getStatus() {
         return status;
@@ -24,11 +62,11 @@ public class Adoption implements Parcelable {
         this.status = status;
     }
 
-    public int getPrice() {
+    public long getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(long price) {
         this.price = price;
     }
 
@@ -48,46 +86,31 @@ public class Adoption implements Parcelable {
         this.pets_category = pets_category;
     }
 
-    public static Creator<Adoption> getCREATOR() {
-        return CREATOR;
+    public int getVaccinated() {
+        return vaccinated;
     }
 
-    protected Adoption(Parcel in) {
-        id = in.readInt();
-        size = in.readInt();
-        age = in.readInt();
-        price = in.readInt();
-        title = in.readString();
-        status = in.readString();
-        gender = in.readString();
-        background_story = in.readString();
-        desc = in.readString();
-        medical_notes = in.readString();
-        kelurahan = in.readString();
-        kota = in.readString();
-        kecamatan = in.readString();
-        provinsi = in.readString();
-        category = in.readString();
-        pets_category = in.readString();
-        created_at = in.readString();
-        vaccinated = in.readByte() != 0;
-        neutered = in.readByte() != 0;
-        friendly = in.readByte() != 0;
-        user = in.readParcelable(User.class.getClassLoader());
-        photo = in.createStringArrayList();
+    public void setVaccinated(int vaccinated) {
+        this.vaccinated = vaccinated;
     }
 
-    public static final Creator<Adoption> CREATOR = new Creator<Adoption>() {
-        @Override
-        public Adoption createFromParcel(Parcel in) {
-            return new Adoption(in);
-        }
+    public int getNeutered() {
+        return neutered;
+    }
 
-        @Override
-        public Adoption[] newArray(int size) {
-            return new Adoption[size];
-        }
-    };
+    public void setNeutered(int neutered) {
+        this.neutered = neutered;
+    }
+
+    public int getFriendly() {
+        return friendly;
+    }
+
+    public void setFriendly(int friendly) {
+        this.friendly = friendly;
+    }
+
+
 
     public int getId() {
         return id;
@@ -193,30 +216,6 @@ public class Adoption implements Parcelable {
         this.created_at = created_at;
     }
 
-    public boolean isVaccinated() {
-        return vaccinated;
-    }
-
-    public void setVaccinated(boolean vaccinated) {
-        this.vaccinated = vaccinated;
-    }
-
-    public boolean isNeutered() {
-        return neutered;
-    }
-
-    public void setNeutered(boolean neutered) {
-        this.neutered = neutered;
-    }
-
-    public boolean isFriendly() {
-        return friendly;
-    }
-
-    public void setFriendly(boolean friendly) {
-        this.friendly = friendly;
-    }
-
     public User getUser() {
         return user;
     }
@@ -243,23 +242,23 @@ public class Adoption implements Parcelable {
         dest.writeInt(id);
         dest.writeInt(size);
         dest.writeInt(age);
-        dest.writeInt(price);
+        dest.writeLong(price);
         dest.writeString(title);
         dest.writeString(gender);
         dest.writeString(background_story);
-        dest.writeString(desc);
-        dest.writeString(status);
-        dest.writeString(medical_notes);
         dest.writeString(category);
         dest.writeString(pets_category);
+        dest.writeString(desc);
+        dest.writeString(medical_notes);
         dest.writeString(kelurahan);
         dest.writeString(kota);
         dest.writeString(kecamatan);
         dest.writeString(provinsi);
         dest.writeString(created_at);
-        dest.writeByte((byte) (vaccinated ? 1 : 0));
-        dest.writeByte((byte) (neutered ? 1 : 0));
-        dest.writeByte((byte) (friendly ? 1 : 0));
+        dest.writeString(status);
+        dest.writeInt(vaccinated);
+        dest.writeInt(neutered);
+        dest.writeInt(friendly);
         dest.writeParcelable(user, flags);
         dest.writeStringList(photo);
     }

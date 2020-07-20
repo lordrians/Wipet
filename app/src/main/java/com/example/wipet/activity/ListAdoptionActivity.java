@@ -87,7 +87,10 @@ public class ListAdoptionActivity extends AppCompatActivity {
                         JSONObject categoryObj = adoptObj.getJSONObject("category");
                         adoption.setCategory(categoryObj.getString("name"));
 
-                        JSONArray photoArr = adoptObj.getJSONArray("photo");
+                        JSONObject petsCategoryObj = adoptObj.getJSONObject("pets_category");
+                        adoption.setPets_category(petsCategoryObj.getString("name"));
+
+                        JSONArray photoArr = adoptObj.getJSONArray("single_photo");
                         if (photoArr.length() > 0){
                             ArrayList<String> photoArrayList = new ArrayList<>();
                             for (int j = 0; j < photoArr.length(); j++){

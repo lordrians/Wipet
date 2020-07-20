@@ -15,8 +15,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -25,21 +23,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.wipet.Api;
 import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
 import com.example.wipet.R;
-import com.example.wipet.adapter.PhotoDiscussionAdapter;
+import com.example.wipet.adapter.PhotoAdapter;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -100,7 +94,7 @@ public class CreateDiscussionActivity extends AppCompatActivity implements View.
         for (int i = 0; i < bitmapArrayList.size(); i++){
             stringPhotoArrList.add(GlobalFunc.bitmapToString(bitmapArrayList.get(i)));
         }
-        PhotoDiscussionAdapter adapter = new PhotoDiscussionAdapter(this, stringPhotoArrList,GlobalVar.BITMAP_FORMAT);
+        PhotoAdapter adapter = new PhotoAdapter(this, stringPhotoArrList,GlobalVar.BITMAP_FORMAT,"");
         vpPhoto.setAdapter(adapter);
     }
 

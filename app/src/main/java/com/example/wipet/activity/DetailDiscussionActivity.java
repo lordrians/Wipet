@@ -15,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
@@ -24,7 +23,7 @@ import com.example.wipet.GlobalFunc;
 import com.example.wipet.GlobalVar;
 import com.example.wipet.R;
 import com.example.wipet.adapter.CommentAdapter;
-import com.example.wipet.adapter.PhotoDiscussionAdapter;
+import com.example.wipet.adapter.PhotoAdapter;
 import com.example.wipet.object.Comment;
 import com.example.wipet.object.Discussion;
 import com.example.wipet.object.User;
@@ -34,15 +33,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -254,7 +247,7 @@ public class DetailDiscussionActivity extends AppCompatActivity {
                         JSONObject photo = photoJsonArr.getJSONObject(i);
                         stringPhotoArrList.add(photo.getString("path_photo"));
                     }
-                    PhotoDiscussionAdapter adapter = new PhotoDiscussionAdapter(this, stringPhotoArrList, GlobalVar.STRING_FORMAT);
+                    PhotoAdapter adapter = new PhotoAdapter(this, stringPhotoArrList, GlobalVar.STRING_FORMAT,GlobalVar.DETAIL_DISCUSSION);
                     vpPhoto.setAdapter(adapter);
 
                     //Comment

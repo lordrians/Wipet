@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import java.io.ByteArrayOutputStream;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -103,6 +105,11 @@ public class GlobalFunc {
 
 
         return ago;
+    }
+
+    public static String getFormatCurrency(long price){
+        NumberFormat numberFormat = new DecimalFormat("#,###");
+        return numberFormat.format(price);
     }
 
 }

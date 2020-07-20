@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/item_layout_listadoption"
         android:layout_width="170dp"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         app:cardCornerRadius="24dp"
         android:background="@drawable/selector_item_discus_horizontal"
         android:layout_margin="7dp"
