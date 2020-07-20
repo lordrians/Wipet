@@ -53,6 +53,8 @@ public class DetailAdoptionActivity extends AppCompatActivity {
 
         loadData();
 
+
+
     }
 
 
@@ -81,6 +83,8 @@ public class DetailAdoptionActivity extends AppCompatActivity {
         dialog = new ProgressDialog(this);
         dialog.setCancelable(false);
 
+        btnLike.setOnClickListener(v->likeAdoption());
+
     }
 
     private void loadData() {
@@ -94,6 +98,9 @@ public class DetailAdoptionActivity extends AppCompatActivity {
                     JSONObject adoptionObj = object.getJSONObject("adoption");
                     JSONObject userObj = adoptionObj.getJSONObject("user");
 
+                    if (object.getBoolean("liked")){
+                        btnLike.setImageResource(R.drawable.ic_favorite);
+                    }
 
                     tvName.setText(adoptionObj.getString("title"));
                     tvPrice.setText("Rp. "+ GlobalFunc.getFormatCurrency(adoptionObj.getLong("price")));
@@ -158,7 +165,47 @@ public class DetailAdoptionActivity extends AppCompatActivity {
 
 
     }
+    private void likeAdoption() {
+        dialog.setMessage("Liking...");
+        dialog.show();
 
+        StringRequest request = new StringRequest(StringRequest.Method.POST, Api.CREATE_LIKE_ADOPTION, response -> {
+            try {
+                JSONObject object = new JSONObject(response);
+                if (object.getBoolean("success")){
+                    if (object.getString("message").equals("Liked")){
+                        btnLike.setImageResource(R.drawable.ic_favorite);
+                    } else {
+                        btnLike.setImageResource(R.drawable.ic_favorite_black);
+                    }
+                    Toast.makeText(getApplicationContext(), object.getString("message"), Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                }
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+                dialog.dismiss();
+            }
+        }, error -> {
+            error.printStackTrace();
+            dialog.dismiss();
+        }){
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                return GlobalFunc.getHeaders(getApplicationContext());
+            }
+
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                HashMap<String,String> map = new HashMap<>();
+                map.put("id", adopsi.getId()+"" );
+                return map;
+            }
+        };
+        Volley.newRequestQueue(getApplicationContext()).add(request);
+
+    }
 
 
 

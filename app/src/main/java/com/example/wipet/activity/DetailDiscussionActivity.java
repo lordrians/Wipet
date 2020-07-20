@@ -104,7 +104,7 @@ public class DetailDiscussionActivity extends AppCompatActivity {
         dialog.setMessage("Liking...");
         dialog.show();
 
-        StringRequest request = new StringRequest(StringRequest.Method.POST, Api.CREATE_LIKE, response -> {
+        StringRequest request = new StringRequest(StringRequest.Method.POST, Api.CREATE_LIKE_DISCUSSION, response -> {
             try {
                 JSONObject object = new JSONObject(response);
                 if (object.getBoolean("success")){

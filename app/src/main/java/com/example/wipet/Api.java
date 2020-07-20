@@ -30,7 +30,8 @@ public class Api {
     //Comments
     public static final String CREATE_COMMENT = HOME + "/comment/create" ;
     //Like
-    public static final String CREATE_LIKE = HOME + "/like/create" ;
+    public static final String CREATE_LIKE_DISCUSSION = HOME + "/like/create_diskusi" ;
+    public static final String CREATE_LIKE_ADOPTION = HOME + "/like/create_adoption" ;
 
     //adoption
     public static final String CREATE_ADOTION = HOME + "/adoption/create";
