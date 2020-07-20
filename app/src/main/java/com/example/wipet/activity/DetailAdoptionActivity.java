@@ -84,6 +84,7 @@ public class DetailAdoptionActivity extends AppCompatActivity {
         dialog.setCancelable(false);
 
         btnLike.setOnClickListener(v->likeAdoption());
+        btnBack.setOnClickListener(v ->finish());
 
     }
 
