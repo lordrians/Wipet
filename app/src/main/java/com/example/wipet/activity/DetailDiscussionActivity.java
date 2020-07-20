@@ -164,16 +164,17 @@ public class DetailDiscussionActivity extends AppCompatActivity {
                     comment.setUser(user);
 
                     commentArrayList.add(comment);
-//                    if (rvComment.getAdapter() != null){
-//                        rvComment.getAdapter().notifyDataSetChanged();
-//                        Toast.makeText(getApplicationContext(),"SSS", Toast.LENGTH_LONG).show();
-//                    } else {
-//                        CommentAdapter commentAdapter = new CommentAdapter(this,commentArrayList);
-//                        rvComment.setAdapter(commentAdapter);
-//                        rvComment.getAdapter().notifyDataSetChanged();
-//                        Toast.makeText(getApplicationContext(),"11", Toast.LENGTH_LONG).show();
-//                    }
-                    rvComment.getAdapter().notifyDataSetChanged();
+                    if (rvComment.getAdapter() != null){
+                        rvComment.getAdapter().notifyDataSetChanged();
+                        Toast.makeText(getApplicationContext(),"SSS", Toast.LENGTH_LONG).show();
+                    } else {
+                        CommentAdapter commentAdapter = new CommentAdapter(this,commentArrayList);
+                        rvComment.setAdapter(commentAdapter);
+                        rvComment.getAdapter().notifyItemInserted(commentArrayList.size()-1);
+                        rvComment.getAdapter().notifyDataSetChanged();
+                        Toast.makeText(getApplicationContext(),"11", Toast.LENGTH_LONG).show();
+                    }
+//                    rvComment.getAdapter().notifyDataSetChanged();
 
                     svLayout.fullScroll(ScrollView.FOCUS_DOWN);
                     etComment.setText("");

@@ -77,12 +77,12 @@
 
 
             <LinearLayout
+                android:id="@+id/asd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/container_start"
                 android:layout_marginEnd="@dimen/container_end"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/toolbar_detaildisc">
@@ -206,23 +206,35 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/container_start"
                     android:textSize="@dimen/txt_detail_discus"
-                    tools:text="@tools:sample/full_names" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/margin_top_comment"
-                    android:background="@color/hint_color" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_comment_detaildisc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_comment" />
+                    tools:text="@string/comment" />
 
 
             </LinearLayout>
 
+            <View
+                android:id="@+id/divide_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_top_comment"
+                android:layout_marginStart="@dimen/container_start"
+                android:layout_marginEnd="@dimen/container_end"
+                android:background="@color/hint_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/asd" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comment_detaildisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/container_top"
+                android:layout_marginStart="@dimen/container_start"
+                android:layout_marginEnd="@dimen/container_end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divide_line"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_comment" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -62,7 +62,7 @@
                 android:id="@+id/tv_content_item_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                tools:text="@string/comment"
+                tools:text="@string/a_day_ago"
                 android:textSize="@dimen/item_discuss_comment"
                 android:gravity="center_vertical"
                 style="@style/BaseTextBlack"/>
