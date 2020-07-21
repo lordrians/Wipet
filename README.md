@@ -1,6 +1,6 @@
-# Volley CRUD (Create, Read, Update, Delete)
+# Wipet (With My App)
 
-## In This part, i wan't to share my assignment in my college
+## Summary
 
 This application is a platform for animal lovers to have activities such as discussion, adoption and more. 
 This application is made for startup Wipet. For now the application is still in the process of being worked on until the time of release.
