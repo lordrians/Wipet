@@ -35,3 +35,18 @@ And build with android studio use laravel REST API
 Demo Apps [link](https://www.youtube.com/watch?v=2PMJChPfgSs)
 
 #### [Screenshoot]
+
+This section automatically after user register new account
+
+<img src="/app/screenshoot/1.jpg" width="250" height="400"> <img src="/app/screenshoot/2.jpg" width="250" height="400"> <img src="/app/screenshoot/3.jpg" width="250" height="400"> 
+
+ 
+<img src="/app/screenshoot/4.jpg" width="250" height="400">  <img src="/app/screenshoot/5.jpg" width="250" height="400">  <img src="/app/screenshoot/6.jpg" width="250" height="400"> 
+ 
+ 
+<img src="/app/screenshoot/7.jpg" width="250" height="400">  <img src="/app/screenshoot/8.jpg" width="250" height="400">  <img src="/app/screenshoot/9.jpg" width="250" height="400"> 
+
+
+<img src="/app/screenshoot/10.jpg" width="250" height="400">  <img src="/app/screenshoot/11.jpg" width="250" height="400">  <img src="/app/screenshoot/12.jpg" width="250" height="400"> 
+
+<img src="/app/screenshoot/13.jpg" width="250" height="400">  <img src="/app/screenshoot/14.jpg" width="250" height="400">  
